@@ -1,5 +1,6 @@
 package com.tcl.demo.boot.common.test;
 
+import com.tcl.demo.boot.common.base.ErrorCode;
 import com.tcl.demo.boot.common.result.ResponseDTO;
 import org.junit.Assert;
 import org.junit.Test;
@@ -14,7 +15,7 @@ public class ResponseDTOTest {
         ResponseDTO<Integer> responseDTO = new ResponseDTO<Integer>().buildSuccess(1);
 
         Assert.assertNotNull(responseDTO);
-        Assert.assertTrue("结构体success不为true", responseDTO.getCode() == ResponseDTO.SUCCESS_CODE && responseDTO.isSuccess());
+        Assert.assertTrue("结构体success不为true", responseDTO.getCode() == ErrorCode.SUCCESS_CODE && responseDTO.isSuccess());
     }
 
     @Test
@@ -32,6 +33,6 @@ public class ResponseDTOTest {
         ResponseDTO<Integer> responseDTO = new ResponseDTO<Integer>().buildFail(400, "400错误");
 
         Assert.assertNotNull(responseDTO);
-        Assert.assertTrue(responseDTO.getCode() != ResponseDTO.SUCCESS_CODE && !responseDTO.isSuccess());
+        Assert.assertTrue(responseDTO.getCode() != ErrorCode.SUCCESS_CODE && !responseDTO.isSuccess());
     }
 }

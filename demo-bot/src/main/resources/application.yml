@@ -6,3 +6,7 @@ server:
 spring:
   application:
     name: ${application.name}
+
+logging:
+  level:
+    root: debug
