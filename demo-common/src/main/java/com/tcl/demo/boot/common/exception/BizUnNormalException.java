@@ -21,7 +21,7 @@ public class BizUnNormalException extends BizRuntimeException {
      */
     public BizUnNormalException(ErrorCode errorCode) {
 
-        Assert.check(null != errorCode);
+        // Assert.check(null != errorCode);
 
         this.code = errorCode.getCode();
         this.msg = errorCode.getMsg();
@@ -37,7 +37,8 @@ public class BizUnNormalException extends BizRuntimeException {
      */
     public BizUnNormalException(ErrorCode errorCode, Object... replace) {
 
-        Assert.check(null != errorCode);
+        // Assert.check(null != errorCode);
+
         this.code = errorCode.getCode();
         this.msg = MessageFormat.format(Optional.fromNullable(errorCode.getMsg()).or(""), replace);
         this.lv = ErrorLv.ERROR;
@@ -51,7 +52,8 @@ public class BizUnNormalException extends BizRuntimeException {
      */
     public BizUnNormalException(ErrorCode errorCode, ErrorLv errorLv) {
 
-        Assert.check(null != errorCode);
+        // Assert.check(null != errorCode);
+
         this.code = errorCode.getCode();
         this.msg = errorCode.getMsg();
         this.lv = Optional.fromNullable(errorLv).or(ErrorLv.ERROR);
@@ -66,9 +68,25 @@ public class BizUnNormalException extends BizRuntimeException {
      */
     public BizUnNormalException(ErrorCode errorCode, ErrorLv errorLv, Object... replace) {
 
-        Assert.check(null != errorCode);
+        // Assert.check(null != errorCode);
         this.code = errorCode.getCode();
         this.msg = MessageFormat.format(Optional.fromNullable(errorCode.getMsg()).or(""), replace);
         this.lv = Optional.fromNullable(errorLv).or(ErrorLv.ERROR);
+    }
+
+    /**
+     * 构建异常
+     *
+     * @param errorCode
+     * @param errorMsg
+     * @param errorLv
+     * @param replace
+     */
+    public BizUnNormalException(int errorCode, String errorMsg, ErrorLv errorLv, Object... replace) {
+
+        this.code = errorCode;
+        this.msg = MessageFormat.format(Optional.fromNullable(errorMsg).or(""), replace);
+        this.lv = Optional.fromNullable(errorLv).or(ErrorLv.ERROR);
+
     }
 }

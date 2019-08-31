@@ -5,14 +5,15 @@ import com.tcl.demo.boot.common.aop.ResponseAop;
 import com.tcl.demo.boot.common.base.ErrorCodes;
 import com.tcl.demo.boot.common.exception.BizNormalException;
 import com.tcl.demo.boot.common.result.ResponseDTO;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
+@Controller
 @RequestMapping("base")
 @CrossOrigin(origins = "*", allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST})
 public class BaseController {
 
-    // @ResponseAop
+    @ResponseAop
     @RequestMapping(value = "checkHealthy", method = RequestMethod.GET)
     public ResponseDTO<Boolean> checkHealthy() {
 

@@ -71,5 +71,21 @@ public class BizNormalException extends BizRuntimeException {
         this.lv = Optional.fromNullable(errorLv).or(ErrorLv.INFO);
     }
 
+    /**
+     * 构建异常
+     *
+     * @param errorCode
+     * @param errorMsg
+     * @param errorLv
+     * @param replace
+     */
+    public BizNormalException(int errorCode, String errorMsg, ErrorLv errorLv, Object... replace) {
+
+        this.code = errorCode;
+        this.msg = MessageFormat.format(Optional.fromNullable(errorMsg).or(""), replace);
+        this.lv = Optional.fromNullable(errorLv).or(ErrorLv.INFO);
+
+    }
+
 
 }
