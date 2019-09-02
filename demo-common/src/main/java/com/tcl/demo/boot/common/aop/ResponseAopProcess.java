@@ -3,6 +3,7 @@ package com.tcl.demo.boot.common.aop;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.base.Optional;
+import com.google.common.collect.Lists;
 import com.tcl.demo.boot.common.base.ErrorCodes;
 import com.tcl.demo.boot.common.base.ErrorLv;
 import com.tcl.demo.boot.common.exception.BizNormalException;
@@ -19,6 +20,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.List;
+
 /**
  * 全局异常捕获aop，作用于最外层，例如controller
  */
@@ -28,6 +31,8 @@ import org.springframework.context.annotation.Configuration;
 public class ResponseAopProcess {
 
     private static final Logger chainLog = LoggerFactory.getLogger("chainLog");
+
+    private static final List<Class> filterClass = Lists.newArrayList(Integer.class);
 
     @Pointcut(value = "@annotation(ResponseAop)")
     public void pointCut() {
@@ -141,8 +146,13 @@ public class ResponseAopProcess {
 
         JSONObject paramFirst = new JSONObject();
 
-        if(null != requestParams && requestParams.length > 0){
-            paramFirst = JSONObject.parseObject(JSON.toJSONString(requestParams[0]));
+        if (null != requestParams && requestParams.length > 0) {
+
+            try {
+                Object objects = requestParams[0];
+                paramFirst = JSONObject.parseObject(JSON.toJSONString(objects));
+            } catch (Exception e) {
+            }
         }
 
         Long userNo = Optional.fromNullable(paramFirst.getLong("userNo")).or(0L);

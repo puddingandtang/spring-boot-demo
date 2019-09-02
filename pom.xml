@@ -29,6 +29,9 @@
         <lombok.version>1.16.18</lombok.version>
         <guava.version>18.0</guava.version>
         <fastJson.version>1.2.36</fastJson.version>
+        <druid.boot.version>1.1.17</druid.boot.version>
+        <mybatis.boot.version>1.2.0</mybatis.boot.version>
+        <mysql.version>5.1.37</mysql.version>
     </properties>
 
     <dependencyManagement>
@@ -96,6 +99,24 @@
                 <version>${fastJson.version}</version>
             </dependency>
             <!-- fastJson end-->
+
+            <!-- 数据库 begin-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.boot.version}</version>
+            </dependency>
+            <!-- 数据库 end-->
 
         </dependencies>
     </dependencyManagement>

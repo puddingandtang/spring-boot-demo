@@ -9,7 +9,7 @@ public class ErrorCodes {
     public static final ErrorCode CODE_ERROR = new ErrorCode(400, "系统内部异常");
 
     // 请求参数非法
-    public static final ErrorCode PARAMETER_COMMON_ILLEGALITY = new ErrorCode(1_000_000, "请求参数非法");
+    public static final ErrorCode PARAMETER_COMMON_ILLEGALITY = new ErrorCode(1_000_001, "请求参数非法");
 
 
 }

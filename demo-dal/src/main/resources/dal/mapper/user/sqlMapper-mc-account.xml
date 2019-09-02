@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tcl.demo.boot.dal.user.mapper.McAccountMapper">
+
+    <select id="queryByAccountNo" resultType="com.tcl.demo.boot.dal.user.dataobject.McAccountDataObject">
+        select
+        id as id,
+        account_no as accountNo,
+        account_type as accountType
+        from mc_account
+        where account_no = #{accountNo} and account_type = #{accountType}
+    </select>
+
+</mapper>

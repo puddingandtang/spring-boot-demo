@@ -1,5 +1,6 @@
 package com.tcl.demo.boot.web.dto;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
