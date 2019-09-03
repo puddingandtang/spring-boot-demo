@@ -8,12 +8,12 @@ import java.io.Serializable;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class DemoRequestDTO extends BaseDTO implements Serializable {
+public class IdentityRequestDTO extends BaseDTO implements Serializable {
 
-    private static final long serialVersionUID = 6130732824819680615L;
+    private static final long serialVersionUID = 3056457025673057914L;
 
     @Builder
-    public DemoRequestDTO(String userNo, Integer userType, Integer bizLine, Integer terminal) {
+    public IdentityRequestDTO(String userNo, Integer userType, Integer bizLine, Integer terminal) {
         super(userNo, userType, bizLine, terminal);
     }
 }

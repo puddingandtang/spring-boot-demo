@@ -8,7 +8,9 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @SpringBootApplication(
         scanBasePackages = {
                 "com.tcl.demo.boot.web",
-                "com.tcl.demo.boot.common.aop","com.tcl.demo.boot.dal"}
+                "com.tcl.demo.boot.common.aop",
+                "com.tcl.demo.boot.dal",
+                "com.tcl.demo.boot.service"}
 )
 public class SpringBootDemo {
 

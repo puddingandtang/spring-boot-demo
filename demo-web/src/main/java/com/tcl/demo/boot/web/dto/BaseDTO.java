@@ -1,5 +1,6 @@
 package com.tcl.demo.boot.web.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,12 +12,13 @@ import java.io.Serializable;
  */
 @Getter
 @Setter
-public class BaseRequestDTO implements Serializable {
+@AllArgsConstructor
+public class BaseDTO implements Serializable {
 
     /**
      * 用户编号
      */
-    private Long userNo;
+    private String userNo;
 
     /**
      * 用户类型

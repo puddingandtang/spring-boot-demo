@@ -150,7 +150,7 @@ public class ResponseAopProcess {
 
             try {
                 Object objects = requestParams[0];
-                paramFirst = JSONObject.parseObject(JSON.toJSONString(objects));
+                paramFirst = Optional.fromNullable(JSONObject.parseObject(JSON.toJSONString(objects))).or(new JSONObject());
             } catch (Exception e) {
             }
         }
