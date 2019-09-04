@@ -18,19 +18,6 @@ public class RewardMatchingRuleTest {
 
     @Test
     @Ignore
-    public void buildRuleJSONString2Object() {
-        String jsonRule = "[{\"nodeMatchType\":0,\"notifyConfig\":{\"open\":false},\"rewardContents\":[{\"rewardNo\":1}],\"sort\":1},{\"ladder\":{\"ladderBegin\":0,\"ladderEnd\":100,\"ladderType\":1},\"nodeMatchType\":1,\"notifyConfig\":{\"$ref\":\"$[0].notifyConfig\"},\"rewardContents\":[{\"$ref\":\"$[0].rewardContents[0]\"}],\"sort\":1},{\"ladder\":{\"ladderRange\":[\"A\",\"B\"],\"ladderType\":2},\"nodeMatchType\":1,\"notifyConfig\":{\"open\":true,\"push\":{\"pushNo\":1}},\"rewardContents\":[{\"$ref\":\"$[0].rewardContents[0]\"}],\"sort\":2}]";
-
-        List<RewardMatchingRule> rules = JSONArray.parseArray(jsonRule, RewardMatchingRule.class);
-        System.out.println(rules.get(0).getRewardContents().get(0).getRewardNo());
-
-        System.out.println(rules);
-
-    }
-
-
-    @Test
-    @Ignore
     public void buildRuleObject2JSONString() {
 
         RewardContent commonReward = new RewardContent();
@@ -46,6 +33,8 @@ public class RewardMatchingRuleTest {
         notifyConfigB.setPush(pushElement);
 
         RewardMatchingRule ruleA = new RewardMatchingRule();
+        ruleA.setVersion("1.1");
+        ruleA.setValid(false);
         ruleA.setNodeMatchType(RewardMatchNode.COMMON.getType());
         ruleA.setSort(1);
         ruleA.setLadder(null);
@@ -54,6 +43,7 @@ public class RewardMatchingRuleTest {
 
 
         RewardMatchingRule ruleB = new RewardMatchingRule();
+        ruleB.setVersion("1.2");
         ruleB.setNodeMatchType(RewardMatchNode.SUCCESS_ORDER.getType());
         ruleB.setSort(1);
         RewardMatchNodeLadder ladderB = new RewardMatchNodeLadder();
@@ -76,7 +66,12 @@ public class RewardMatchingRuleTest {
 
         List<RewardMatchingRule> rules = Lists.newArrayList(ruleA, ruleB, ruleC);
 
+        // System.out.println(JSON.toJSONString(rules));
 
-        System.out.println(JSON.toJSONString(rules));
+        String ruleJsonStr = "[{\"nodeMatchType\":0,\"notifyConfig\":{\"open\":false},\"rewardContents\":[{\"rewardNo\":1}],\"ruleCode\":\"ACTIVITY_REWARD_MATCHING_RULE\",\"sort\":1,\"valid\":false,\"version\":\"1.1\"},{\"ladder\":{\"ladderBegin\":0,\"ladderEnd\":100,\"ladderType\":1},\"nodeMatchType\":1,\"notifyConfig\":{\"$ref\":\"$[0].notifyConfig\"},\"rewardContents\":[{\"$ref\":\"$[0].rewardContents[0]\"}],\"ruleCode\":\"ACTIVITY_REWARD_MATCHING_RULE\",\"sort\":1,\"valid\":true,\"version\":\"1.2\"},{\"ladder\":{\"ladderRange\":[\"A\",\"B\"],\"ladderType\":2},\"nodeMatchType\":1,\"notifyConfig\":{\"open\":true,\"push\":{\"pushNo\":1}},\"rewardContents\":[{\"$ref\":\"$[0].rewardContents[0]\"}],\"ruleCode\":\"ACTIVITY_REWARD_MATCHING_RULE\",\"sort\":2,\"valid\":true,\"version\":\"1.0\"}]" ;
+        List<RewardMatchingRule> rulesFrom =JSONArray.parseArray(ruleJsonStr, RewardMatchingRule.class);
+        System.out.println(rulesFrom);
+
+        System.out.println(JSON.toJSONString(rulesFrom));
     }
 }

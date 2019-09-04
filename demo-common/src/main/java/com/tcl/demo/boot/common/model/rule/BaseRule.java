@@ -22,4 +22,15 @@ public class BaseRule implements Serializable {
      * 规则版本
      */
     private String version;
+
+    /**
+     * 规则有效标志
+     */
+    private Boolean valid;
+
+    public BaseRule(String ruleCode, String version, Boolean valid) {
+        this.ruleCode = ruleCode;
+        this.version = version;
+        this.valid = valid;
+    }
 }
