@@ -2,10 +2,12 @@ package com.tcl.demo.boot.web.dto;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
 
 @Data
+@EqualsAndHashCode(callSuper = false)
 public class AccountResponseDTO extends BaseDTO implements Serializable {
 
     private String identityNo;

@@ -10,6 +10,10 @@ public class ErrorCodes {
 
     // 请求参数非法
     public static final ErrorCode PARAMETER_COMMON_ILLEGALITY = new ErrorCode(1_000_001, "请求参数非法");
+    // 初始化参数非法
+    public static final ErrorCode INIT_PARAM_ILLEGALITY = new ErrorCode(1_000_002, "初始化参数非法");
+    // guava cache 返回null错误
+    public static final ErrorCode CACHE_CALL_BACK_NULL = new ErrorCode(1_000_003, "缓存回调返回结果为null");
 
     // 营销用户体系-错误码 2_000_000 ~ 2_099_999
     public static final ErrorCode QUERY_ACCOUNT_PARAM_ILLEGALITY = new ErrorCode(2_000_000, "查询营销账户参数非法");
