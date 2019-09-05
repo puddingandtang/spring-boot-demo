@@ -84,7 +84,7 @@ public class McAccountServiceImpl implements McAccountService {
 
         if (CollectionTool.isEmpty(types) && null != McUserTypeEnum.acquireByType(userType)) {
             // 初始化配置 => types为空，userType存在，则加载初始化配置
-            types = accountInitConfigComponent.acquireInitAccountType(userType);
+            types = accountInitConfigComponent.acquireValidInitAccountType(userType);
         }
 
         if (CollectionTool.isEmpty(types)) {

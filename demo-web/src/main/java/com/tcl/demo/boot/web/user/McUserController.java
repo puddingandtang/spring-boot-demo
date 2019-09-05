@@ -7,6 +7,7 @@ import com.tcl.demo.boot.common.base.ErrorCodes;
 import com.tcl.demo.boot.common.preconditions.PreconditionsAssert;
 import com.tcl.demo.boot.common.result.ResponseDTO;
 import com.tcl.demo.boot.common.tool.CollectionTool;
+import com.tcl.demo.boot.dal.user.type.McAccountTypeEnum;
 import com.tcl.demo.boot.dal.user.type.McUserTypeEnum;
 import com.tcl.demo.boot.service.user.McAccountService;
 import com.tcl.demo.boot.service.user.McIdentityService;
@@ -72,6 +73,27 @@ public class McUserController {
         PreconditionsAssert.assertTrue(!CollectionTool.isEmpty(mcAccountBOs), ErrorCodes.IDENTITY_NOT_EXIST);
 
         return new ResponseDTO<String>().buildSuccess(JSON.toJSONString(mcAccountBOs));
+
+    }
+
+
+    @ResponseAop
+    @RequestMapping(value = "queryAccountForAccount", method = RequestMethod.GET)
+    public ResponseDTO<String> queryAccountForAccount(String userNo, Integer userType, Integer accountType) {
+
+        PreconditionsAssert.assertTrue(!Strings.isNullOrEmpty(userNo), ErrorCodes.QUERY_ACCOUNT_PARAM_ILLEGALITY);
+        PreconditionsAssert.assertNotNull(McUserTypeEnum.acquireByType(userType), ErrorCodes.QUERY_ACCOUNT_PARAM_ILLEGALITY);
+        PreconditionsAssert.assertNotNull(McAccountTypeEnum.acquireByTypeCode(accountType), ErrorCodes.QUERY_ACCOUNT_PARAM_ILLEGALITY);
+
+
+        McIdentityBO query = McIdentityBO.builder().userNo(userNo).userType(userType).build();
+        McIdentityBO identityBO = mcIdentityService.queryIdentityInfoOrCreate(query);
+        PreconditionsAssert.assertNotNull(identityBO, ErrorCodes.IDENTITY_NOT_EXIST);
+
+        McAccountBO mcAccountBO = mcAccountService.queryAccountInfoOrCreate(identityBO.getIdentityNo(), accountType);
+        PreconditionsAssert.assertNotNull(mcAccountBO, ErrorCodes.IDENTITY_NOT_EXIST);
+
+        return new ResponseDTO<String>().buildSuccess(JSON.toJSONString(mcAccountBO));
 
     }
 
