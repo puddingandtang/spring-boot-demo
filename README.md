@@ -1,2 +1,2 @@
-# spring-boot-demo
-springBootDemo
+# 日常积累
+积累工作中的一些业务和技术，朝花夕拾
