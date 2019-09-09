@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 
+
 @Slf4j
 @Controller
 @RequestMapping("demo")
@@ -51,5 +52,15 @@ public class DemoController {
 
         throw new RuntimeException("使用@ResponseAop，但是构建的返回结构不为ResponseDTO");
     }
+
+
+    @ResponseAop
+    @GetMapping(value = "bestReCommand")
+    public ResponseDTO<Boolean> bestReCommand() {
+
+
+        return new ResponseDTO<Boolean>();
+    }
+
 
 }
