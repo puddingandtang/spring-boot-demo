@@ -1,6 +1,8 @@
 package com.tcl.demo.boot.common.model.rule;
 
 import com.tcl.demo.boot.common.model.rule.activity.reward.RewardMatchingRule;
+import com.tcl.demo.boot.common.model.rule.coupon.CouponCityRule;
+import com.tcl.demo.boot.common.model.rule.coupon.CouponTerminalRule;
 import lombok.Getter;
 
 import java.util.List;
@@ -8,7 +10,9 @@ import java.util.List;
 @Getter
 public enum RuleEnum {
 
-    COUPON_CITY_RULE(1, "COUPON_CITY_RULE", "券城市规则", null, null),
+    COUPON_CITY_RULE(1, "COUPON_CITY_RULE", "券城市规则", null, CouponCityRule.class),
+
+    COUPON_TERMINAL_RULE(1, "COUPON_TERMINAL_RULE", "券终端规则", null, CouponTerminalRule.class),
 
     ACTIVITY_REWARD_MATCHING_RULE(2, "ACTIVITY_REWARD_MATCHING_RULE", "活动奖励匹配规则", List.class, RewardMatchingRule.class);
 

@@ -4,25 +4,33 @@ import com.google.common.base.Optional;
 import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 import com.tcl.demo.boot.common.base.ErrorCodes;
+import com.tcl.demo.boot.common.model.rule.BaseRule;
 import com.tcl.demo.boot.common.model.rule.RuleEnum;
 import com.tcl.demo.boot.common.model.rule.coupon.CouponCityRule;
 import com.tcl.demo.boot.common.model.rule.coupon.CouponCityTypeEnum;
-import com.tcl.demo.boot.service.common.processor.RuleVerifyCondition;
-import com.tcl.demo.boot.service.common.processor.RuleVerifyContent;
-import com.tcl.demo.boot.service.common.processor.RuleVerifyProcessor;
+import com.tcl.demo.boot.service.common.processor.BizProcessor;
+import com.tcl.demo.boot.service.coupon.CouponBO;
+import com.tcl.demo.boot.service.coupon.CouponFilterBO;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Map;
 
+/**
+ * 城市规则可以不仅仅用于券，但是考虑到每个属性规则可能存在特殊性，还是单独构建
+ */
 @Slf4j
-@Service
-public class CityRuleVerifyProcessor extends RuleVerifyProcessor {
+@Component
+public class CouponCityRuleVerifyProcessor extends BizProcessor<RuleVerifyCondition<CouponFilterBO>, RuleVerifyContent<CouponBO>> {
 
     @Override
-    protected boolean verifyProcess(RuleVerifyCondition condition, RuleVerifyContent content) {
+    protected boolean verifyProcess(RuleVerifyCondition<CouponFilterBO> condition, RuleVerifyContent<CouponBO> content) {
 
-        CouponCityRule rule = (CouponCityRule) content.getRules().get(RuleEnum.COUPON_CITY_RULE.getRuleCode());
+        CouponBO couponBO = content.getVerifyContent();
+        Map<String, BaseRule> ruleMap = couponBO.getCouponRules();
+
+        CouponCityRule rule = (CouponCityRule) ruleMap.get(RuleEnum.COUPON_CITY_RULE.getRuleCode());
 
         // 规则存在性
         if (null == rule) {
