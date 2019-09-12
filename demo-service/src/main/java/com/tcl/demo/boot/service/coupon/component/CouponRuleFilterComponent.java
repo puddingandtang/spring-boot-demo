@@ -1,9 +1,9 @@
-package com.tcl.demo.boot.service.common.command;
+package com.tcl.demo.boot.service.coupon.component;
 
 import com.tcl.demo.boot.service.common.processor.rule.RuleVerifyCondition;
 import com.tcl.demo.boot.service.common.processor.rule.RuleVerifyContent;
-import com.tcl.demo.boot.service.common.processor.rule.CouponCityRuleVerifyProcessor;
-import com.tcl.demo.boot.service.common.processor.rule.CouponTerminalRuleVerifyProcessor;
+import com.tcl.demo.boot.service.coupon.component.rule.CouponCityRuleVerifyProcessor;
+import com.tcl.demo.boot.service.coupon.component.rule.CouponTerminalRuleVerifyProcessor;
 import com.tcl.demo.boot.service.coupon.CouponBO;
 import com.tcl.demo.boot.service.coupon.CouponFilterBO;
 import lombok.extern.slf4j.Slf4j;
@@ -11,9 +11,12 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 
+/**
+ *
+ */
 @Slf4j
 @Component
-public class CouponRuleFilterTool {
+public class CouponRuleFilterComponent {
 
     @Resource
     CouponCityRuleVerifyProcessor couponCityRuleVerifyProcessor;

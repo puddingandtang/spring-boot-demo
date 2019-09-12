@@ -1,4 +1,4 @@
-package com.tcl.demo.boot.service.common.processor.rule;
+package com.tcl.demo.boot.service.coupon.component.rule;
 
 import com.google.common.base.Optional;
 import com.google.common.base.Strings;
@@ -7,8 +7,10 @@ import com.tcl.demo.boot.common.base.ErrorCodes;
 import com.tcl.demo.boot.common.model.rule.BaseRule;
 import com.tcl.demo.boot.common.model.rule.RuleEnum;
 import com.tcl.demo.boot.common.model.rule.coupon.CouponCityRule;
-import com.tcl.demo.boot.common.model.rule.coupon.CouponCityTypeEnum;
+import com.tcl.demo.boot.common.model.rule.coupon.type.CouponLimitTypeEnum;
 import com.tcl.demo.boot.service.common.processor.BizProcessor;
+import com.tcl.demo.boot.service.common.processor.rule.RuleVerifyCondition;
+import com.tcl.demo.boot.service.common.processor.rule.RuleVerifyContent;
 import com.tcl.demo.boot.service.coupon.CouponBO;
 import com.tcl.demo.boot.service.coupon.CouponFilterBO;
 import lombok.extern.slf4j.Slf4j;
@@ -35,24 +37,24 @@ public class CouponCityRuleVerifyProcessor extends BizProcessor<RuleVerifyCondit
         // 规则存在性
         if (null == rule) {
 
-            log.info("券规则校验-城市规则-规则不存在，视为校验不通过");
+            log.info("券[{}]-券规则校验-城市规则-规则不存在，视为校验不通过", couponBO.getCouponNo());
             content.setCode(super.buildErrorMsg(ErrorCodes.RULE_NOT_EXIST_ERROR, "券城市规则"));
             return false;
         }
 
-        CouponCityTypeEnum typeEnum = CouponCityTypeEnum.acquireByType(rule.getType());
+        CouponLimitTypeEnum typeEnum = CouponLimitTypeEnum.acquireByType(rule.getType());
 
         // 规则作用类型
         if (null == typeEnum) {
 
-            log.info("券规则校验-城市规则-规则类型不存在，视为校验不通过");
+            log.info("券[{}]-券规则校验-城市规则-规则类型不存在，视为校验不通过", couponBO.getCouponNo());
             content.setCode(super.buildErrorMsg(ErrorCodes.RULE_NOT_MATCH_ERROR, "券城市规则"));
             return false;
         }
 
         if (null == condition || Strings.isNullOrEmpty(condition.getCityCode())) {
 
-            log.info("券规则校验-城市规则-规则类型不存在，视为校验不通过");
+            log.info("券[{}]-券规则校验-城市规则-规则类型不存在，视为校验不通过", couponBO.getCouponNo());
 
             return false;
         }
@@ -60,18 +62,18 @@ public class CouponCityRuleVerifyProcessor extends BizProcessor<RuleVerifyCondit
         String outCity = condition.getCityCode();
 
         switch (typeEnum) {
-            case ALL_CITY: {
+            case ALL_NOT_LIMIT: {
 
-                log.info("券规则校验-城市规则-规则全国，校验通过");
+                log.info("券[{}]-券规则校验-城市规则-规则全国，校验通过", couponBO.getCouponNo());
                 return true;
             }
-            case USABLE_CITY: {
+            case USABLE_LIMIT: {
 
                 List<String> configCities = Optional.fromNullable(rule.getCityCodes()).or(Lists.newArrayList());
 
                 // 匹配上则说明pass
                 boolean matchResult = configCities.contains(outCity);
-                log.info("券规则校验-城市规则-规则可用城市，校验[{}]", matchResult);
+                log.info("券[{}]-券规则校验-城市规则-规则可用城市，校验[{}]", couponBO.getCouponNo(), matchResult);
 
                 if (!matchResult) {
                     content.setCode(super.buildErrorMsg(ErrorCodes.RULE_NOT_MATCH_ERROR, "券城市规则"));
@@ -79,13 +81,14 @@ public class CouponCityRuleVerifyProcessor extends BizProcessor<RuleVerifyCondit
 
                 return matchResult;
             }
-            case DISABLE_CITY: {
+            case DISABLE_LIMIT: {
 
                 List<String> configCities = Optional.fromNullable(rule.getCityCodes()).or(Lists.newArrayList());
                 // 匹配上则说明fail
                 boolean matchResult = configCities.contains(outCity);
-                log.info("券规则校验-城市规则-规则可用城市，校验[{}]", matchResult);
+                log.info("券[{}]-券规则校验-城市规则-规则可用城市，校验[{}]", couponBO.getCouponNo(), matchResult);
 
+                // todo 这里结合业务全局城市，理解为有效城市范围内才可
                 if (matchResult) {
                     content.setCode(super.buildErrorMsg(ErrorCodes.RULE_NOT_MATCH_ERROR, "券城市规则"));
                 }
@@ -95,6 +98,7 @@ public class CouponCityRuleVerifyProcessor extends BizProcessor<RuleVerifyCondit
             }
             default: {
 
+                content.setCode(super.buildErrorMsg(ErrorCodes.RULE_NOT_MATCH_ERROR, "券城市规则"));
                 return false;
             }
         }

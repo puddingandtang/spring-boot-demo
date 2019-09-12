@@ -3,7 +3,7 @@ package com.tcl.demo.boot.common.test.rule;
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;
 import com.tcl.demo.boot.common.model.rule.coupon.CouponCityRule;
-import com.tcl.demo.boot.common.model.rule.coupon.CouponCityTypeEnum;
+import com.tcl.demo.boot.common.model.rule.coupon.type.CouponLimitTypeEnum;
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -16,7 +16,7 @@ public class CouponCityRuleTest {
 
         CouponCityRule couponCityRule = new CouponCityRule();
         couponCityRule.setVersion("2.0");
-        couponCityRule.setType(CouponCityTypeEnum.USABLE_CITY.getType());
+        couponCityRule.setType(CouponLimitTypeEnum.USABLE_LIMIT.getType());
         couponCityRule.setCityCodes(Lists.newArrayList("0571", "0572"));
 
         String data2JsonStr = JSON.toJSONString(couponCityRule);

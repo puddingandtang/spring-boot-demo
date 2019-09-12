@@ -8,4 +8,6 @@ import java.io.Serializable;
 public class CouponFilterBO implements Serializable {
 
     private static final long serialVersionUID = 7605223881224447144L;
+
+
 }

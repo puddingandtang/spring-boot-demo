@@ -22,6 +22,8 @@ public class BizProcessCondition implements Serializable {
      */
     private String cityCode;
 
-
-
+    /**
+     * 终端
+     */
+    private Integer terminal;
 }

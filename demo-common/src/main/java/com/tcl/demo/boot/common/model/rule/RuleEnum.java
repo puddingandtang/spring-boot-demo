@@ -10,19 +10,25 @@ import java.util.List;
 @Getter
 public enum RuleEnum {
 
-    COUPON_CITY_RULE(1, "COUPON_CITY_RULE", "券城市规则", null, CouponCityRule.class),
+    COUPON_CITY_RULE(1, "COUPON_CITY_RULE", "券城市规则", null, CouponCityRule.class, true),
 
-    COUPON_TERMINAL_RULE(1, "COUPON_TERMINAL_RULE", "券终端规则", null, CouponTerminalRule.class),
+    COUPON_TERMINAL_RULE(1, "COUPON_TERMINAL_RULE", "券终端规则", null, CouponTerminalRule.class, true),
 
-    ACTIVITY_REWARD_MATCHING_RULE(2, "ACTIVITY_REWARD_MATCHING_RULE", "活动奖励匹配规则", List.class, RewardMatchingRule.class);
+    ACTIVITY_REWARD_MATCHING_RULE(2, "ACTIVITY_REWARD_MATCHING_RULE", "活动奖励匹配规则", List.class, RewardMatchingRule.class, true);
 
 
-    RuleEnum(Integer bizType, String ruleCode, String desc, Class packageClass, Class ruleClass) {
+    RuleEnum(Integer bizType,
+             String ruleCode,
+             String desc,
+             Class packageClass,
+             Class ruleClass,
+             Boolean mustCheck) {
         this.bizType = bizType;
         this.ruleCode = ruleCode;
         this.desc = desc;
         this.packageClass = packageClass;
         this.ruleClass = ruleClass;
+        this.mustCheck = mustCheck;
     }
 
     /**
@@ -51,5 +57,11 @@ public enum RuleEnum {
      * 规则类
      */
     private Class ruleClass;
+
+    /**
+     * 是否必须校验
+     * 因为有些规则是定制的，一些场景不一定存在
+     */
+    private Boolean mustCheck;
 
 }

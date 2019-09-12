@@ -2,6 +2,7 @@ package com.tcl.demo.boot.common.model.rule.coupon;
 
 import com.tcl.demo.boot.common.model.rule.BaseRule;
 import com.tcl.demo.boot.common.model.rule.RuleEnum;
+import com.tcl.demo.boot.common.model.rule.coupon.type.CouponLimitTypeEnum;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -16,7 +17,7 @@ public class CouponCityRule extends BaseRule implements Serializable {
 
     /**
      * 规则类型
-     * {@link CouponCityTypeEnum#getType()}
+     * {@link CouponLimitTypeEnum#getType()}
      */
     private Integer type;
 
