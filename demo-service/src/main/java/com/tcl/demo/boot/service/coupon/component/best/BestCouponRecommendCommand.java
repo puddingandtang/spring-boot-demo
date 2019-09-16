@@ -48,6 +48,7 @@ public class BestCouponRecommendCommand extends BaseCommand
         List<CouponBO> availableCoupons = commandData.stream().filter(t -> {
             RuleVerifyContent<CouponBO> verifyContent = new RuleVerifyContent();
             verifyContent.setVerifyContent(t);
+            // todo 这个地方可以将其在某个环节构建到一个集合里面，循环处理
             return couponRuleFilterComponent.baseRuleVerify(verifyCondition, verifyContent)
                     && couponRuleFilterComponent.customRuleVerify(verifyCondition, verifyContent);
         }).collect(Collectors.toList());

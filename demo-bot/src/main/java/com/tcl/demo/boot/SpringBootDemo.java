@@ -10,7 +10,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
                 "com.tcl.demo.boot.web",
                 "com.tcl.demo.boot.common.aop",
                 "com.tcl.demo.boot.dal",
-                "com.tcl.demo.boot.service"}
+                "com.tcl.demo.boot.service","com.tcl.demo.boot.common.config"}
 )
 public class SpringBootDemo {
 
