@@ -25,6 +25,8 @@ public class ImportCouponDemoTask extends BaseTask<ImportCouponEntry> {
                 } else {
                     // log.info("执行任务:{},正常结束", taskNo);
 
+
+
                     continue;
                 }
 
@@ -33,7 +35,7 @@ public class ImportCouponDemoTask extends BaseTask<ImportCouponEntry> {
         } catch (Exception e) {
 
             log.error("执行任务：" + taskContext.getTaskNo() + ",异常：", e);
-        }finally {
+        } finally {
             log.info("执行任务结束：{}", taskNo);
         }
 

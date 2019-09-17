@@ -23,10 +23,10 @@ public class ErrorCodes {
     public static final ErrorCode RULE_NOT_MATCH_ERROR = new ErrorCode(1_010_003, "{}-规则不满足");
 
     // 命令错误码 1_030_000 ~ 1_039_999
-    public static final ErrorCode COMMAND_PARAM_ILLEGALITY = new ErrorCode(1_030_000, "命令参数非法：{}");
+    public static final ErrorCode COMMAND_PARAM_ILLEGALITY = new ErrorCode(1_030_000, "命令参数非法：{0}");
 
     // Task错误码 1_040_000 ~ 1_049_999
-    public static final ErrorCode TASK_COMMON_ERROR = new ErrorCode(1_040_000, "任务非法：{}");
+    public static final ErrorCode TASK_COMMON_ERROR = new ErrorCode(1_040_000, "任务非法：{0}");
 
     // 营销用户体系-错误码 2_000_000 ~ 2_099_999
     public static final ErrorCode QUERY_ACCOUNT_PARAM_ILLEGALITY = new ErrorCode(2_000_000, "查询营销账户参数非法");

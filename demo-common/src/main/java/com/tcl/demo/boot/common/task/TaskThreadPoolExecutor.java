@@ -91,7 +91,13 @@ public class TaskThreadPoolExecutor extends ThreadPoolExecutor {
 
     /**
      * 取消
-     * 这里存在一个并发问题，
+     * {@link TaskThreadPoolExecutor#cancelTaskForBlock(java.lang.String)}
+     * {@link TaskThreadPoolExecutor#cancelTaskForDoing(java.lang.String)}
+     * <p>
+     * 存在问题：
+     * com.tcl.demo.boot.common.task.TaskThreadPoolExecutor#cancelTaskForDoing(java.lang.String) 依赖于workersDoing，数据的构建存在一个时间差
+     * <p>
+     * 如果不使用这个，可以使用{@link BaseTask#breakIfTaskInfoStop(com.tcl.demo.boot.common.task.TaskContext)},结合任务info的执行状态判断，子类自行实现
      *
      * @param taskNo
      * @return

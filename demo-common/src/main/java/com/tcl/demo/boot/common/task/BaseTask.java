@@ -2,6 +2,7 @@ package com.tcl.demo.boot.common.task;
 
 import com.google.common.base.Strings;
 import com.tcl.demo.boot.common.exception.BizNormalException;
+import com.tcl.demo.boot.common.exception.BizRuntimeException;
 import com.tcl.demo.boot.common.preconditions.PreconditionsAssert;
 import lombok.Getter;
 import lombok.Setter;
@@ -34,15 +35,29 @@ public abstract class BaseTask<T> implements Runnable {
         } catch (Exception e) {
 
             if (e instanceof InterruptedException) {
-                log.info("1");
+
+                log.info("任务ID-{}中断异常:{}", taskContext.getTaskNo(), e);
+
+            } else if (e instanceof BizRuntimeException) {
+
+                log.info("任务ID-{}业务异常:{}", taskContext.getTaskNo(), e);
 
             } else {
-                log.error("2");
+
+                log.info("任务ID-" + taskContext.getTaskNo() + "异常:", e);
             }
 
-            this.updateTaskInfo(taskContext);
-        }
+            try {
 
+                this.updateTaskInfo(taskContext);
+
+            } catch (Exception e1) {
+
+                log.error("任务ID-" + taskContext.getTaskNo() + "更新任务状态信息异常：", e1.getMessage());
+            }
+
+
+        }
 
     }
 
@@ -61,15 +76,20 @@ public abstract class BaseTask<T> implements Runnable {
 
     /**
      * 核心执行，请关注
+     *
+     * @param taskContext
      */
     protected abstract void processCore(TaskContext<T> taskContext);
 
     protected void processCoreAfter(TaskContext<T> taskContext) {
 
+        throw new BizNormalException(TASK_COMMON_ERROR, "子类实现");
     }
 
     /**
      * 更新任务信息
+     *
+     * @param taskContext
      */
     protected void updateTaskInfo(TaskContext<T> taskContext) {
 
@@ -77,10 +97,14 @@ public abstract class BaseTask<T> implements Runnable {
     }
 
     /**
-     * 设置取消正在执行-设置中断标志
+     * 判断任务状态是否stop
+     *
+     * @param taskContext
+     * @return
      */
-    protected void cancleDoing() {
-
-        Thread.currentThread().interrupt();
+    protected boolean breakIfTaskInfoStop(TaskContext<T> taskContext) {
+        // 查询TaskInfo的任务记录，判断当前状态是否执行取消task_status
+        // 子类自行实现
+        return false;
     }
 }
