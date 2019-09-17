@@ -233,14 +233,8 @@ public class TaskThreadPoolExecutor extends ThreadPoolExecutor {
             TimeUnit unit,
             BlockingQueue<Runnable> workQueue) {
 
-//        super(Runtime.getRuntime().availableProcessors() * 2,
-//                Runtime.getRuntime().availableProcessors() * 2,
-//                keepAliveTime,
-//                unit,
-//                workQueue);
-
-        super(5,
-                5,
+        super(Runtime.getRuntime().availableProcessors() * 2,
+                Runtime.getRuntime().availableProcessors() * 2,
                 keepAliveTime,
                 unit,
                 workQueue);
