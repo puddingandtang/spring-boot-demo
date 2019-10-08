@@ -46,6 +46,7 @@
     <orderEntry type="library" name="Maven: org.ow2.asm:asm:4.2" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" name="Maven: org.ehcache:ehcache:3.2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy-all:1.8.3" level="project" />
     <orderEntry type="module" module-name="demo-service" />
     <orderEntry type="module" module-name="demo-dal" />
     <orderEntry type="library" name="Maven: com.alibaba:druid-spring-boot-starter:1.1.17" level="project" />
