@@ -1,14 +1,13 @@
 package com.tcl.demo.boot.common.task;
 
 import com.google.common.base.Strings;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Iterator;
 import java.util.List;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 @Slf4j(topic = "task")
 public class TaskThreadPoolExecutor extends ThreadPoolExecutor {
@@ -18,7 +17,16 @@ public class TaskThreadPoolExecutor extends ThreadPoolExecutor {
      */
     private ConcurrentHashMap<String, Long> startTimes;
 
-    private volatile ConcurrentHashMap<String, DoingRunning> workersDoing = new ConcurrentHashMap();
+    /**
+     * 记录当前执行的线程
+     */
+    private ConcurrentHashMap<String, DoingRunning> workersDoing = new ConcurrentHashMap();
+
+    /**
+     * 记录所有线程
+     */
+    @Getter
+    private ConcurrentHashMap<String, Future> allFuture = new ConcurrentHashMap<>();
 
     @Override
     protected void beforeExecute(Thread t, Runnable r) {
@@ -31,9 +39,8 @@ public class TaskThreadPoolExecutor extends ThreadPoolExecutor {
         if (null != taskContext && !Strings.isNullOrEmpty(taskContext.getTaskNo())) {
             DoingRunning doingRunning = new DoingRunning(t, r);
 
-            log.debug("设置-{},DoingRunning-开始", taskContext.getTaskNo());
             workersDoing.put(taskContext.getTaskNo(), doingRunning);
-            log.debug("设置-{},DoingRunning-结束", taskContext.getTaskNo());
+            log.debug("设置任务编号-{},workersDoing集合完成", taskContext.getTaskNo());
         }
 
         super.beforeExecute(t, r);
@@ -54,7 +61,11 @@ public class TaskThreadPoolExecutor extends ThreadPoolExecutor {
         BaseTask task = (BaseTask) r;
         TaskContext taskContext = task.getTaskContext();
         if (null != taskContext && !Strings.isNullOrEmpty(taskContext.getTaskNo())) {
+
             workersDoing.remove(taskContext.getTaskNo());
+            log.debug("移除任务编号-{},workersDoing集合完成", taskContext.getTaskNo());
+            allFuture.remove(taskContext.getTaskNo());
+            log.debug("移除任务编号-{},allFuture集合完成", taskContext.getTaskNo());
         }
 
         // 统计任务耗时、初始线程数、核心线程数、正在执行的任务数量、已完成任务数量、任务总数、队列里缓存的任务数量、池中存在的最大线程数、最大允许的线程数、线程空闲时间、线程池是否关闭、线程池是否终止
@@ -73,9 +84,11 @@ public class TaskThreadPoolExecutor extends ThreadPoolExecutor {
 
     @Override
     public void shutdown() {
+
         // 统计已执行任务、正在执行任务、未执行任务数量
         log.info(String.format("task-pool-monitor, Going to shutdown. Executed tasks: %d, Running tasks: %d, Pending tasks: %d",
                 this.getCompletedTaskCount(), this.getActiveCount(), this.getQueue().size()));
+
         super.shutdown();
     }
 

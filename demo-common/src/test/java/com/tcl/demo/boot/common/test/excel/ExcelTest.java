@@ -5,6 +5,7 @@ import com.alibaba.excel.ExcelReader;
 import com.alibaba.excel.ExcelWriter;
 import com.alibaba.excel.read.metadata.ReadSheet;
 import com.alibaba.excel.write.metadata.WriteSheet;
+import com.tcl.demo.boot.common.test.excel.converter.CustomStringConverter;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.compress.utils.Lists;
 import org.junit.Assert;
@@ -32,7 +33,8 @@ public class ExcelTest {
         Assert.assertTrue("测试文件不存在", isExist);
 
         ExcelReader excelReader = EasyExcel.read(file, DemoData.class, new ExcelReadListener()).build();
-        ReadSheet excelSheet = EasyExcel.readSheet(1).build();
+
+        ReadSheet excelSheet = EasyExcel.readSheet(0).registerConverter(new CustomStringConverter()).build();
         excelReader.read(excelSheet);
         // excelReader.analysisContext();
         excelReader.finish();
