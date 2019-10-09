@@ -45,7 +45,7 @@
     <orderEntry type="library" name="Maven: com.github.virtuald:curvesapi:1.05" level="project" />
     <orderEntry type="library" name="Maven: cglib:cglib:3.1" level="project" />
     <orderEntry type="library" name="Maven: org.ehcache:ehcache:3.2.3" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy-all:1.8.3" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy-all:2.4.7" level="project" />
     <orderEntry type="module" module-name="demo-service" />
     <orderEntry type="module" module-name="demo-dal" />
     <orderEntry type="library" name="Maven: com.alibaba:druid-spring-boot-starter:1.1.17" level="project" />

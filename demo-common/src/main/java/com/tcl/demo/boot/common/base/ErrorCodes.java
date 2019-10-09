@@ -32,10 +32,14 @@ public class ErrorCodes {
     public static final ErrorCode QUERY_ACCOUNT_PARAM_ILLEGALITY = new ErrorCode(2_000_000, "查询营销账户参数非法");
     public static final ErrorCode IDENTITY_NOT_EXIST = new ErrorCode(2_000_001, "营销账户不存在");
 
-
     // 营销券体系-错误码 2_100_000 ~ 2_199_99
 
     // 营销活动体系-错误码 2_200_000 ~ 2_299_99
 
     // 营销卡体系-错误码 2_300_000 ~ 2_399_99
+
+    // groovy-错误码 2_400_000 ~ 2_499_99
+    public static final ErrorCode GROOVY_SCRIPT_ILLEGALITY = new ErrorCode(2_400_000, "脚本非法：{0}");
+
+    public static final ErrorCode GROOVY_SCRIPT_FAIL = new ErrorCode(2_400_001, "脚本失败：{0}");
 }
