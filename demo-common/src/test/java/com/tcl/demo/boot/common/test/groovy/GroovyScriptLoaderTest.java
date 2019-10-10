@@ -3,6 +3,8 @@ package com.tcl.demo.boot.common.test.groovy;
 import com.google.common.collect.Maps;
 import com.tcl.demo.boot.common.groovy.GroovyObjectHolder;
 import com.tcl.demo.boot.common.groovy.GroovyScriptLoader;
+import groovy.lang.GroovyClassLoader;
+import groovy.lang.GroovyObject;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
@@ -66,6 +68,31 @@ public class GroovyScriptLoaderTest extends GroovyScriptLoader {
 
         }
 
+
+    }
+
+    @Test
+    public void invoke01() {
+        try {
+            ClassLoader parent = Thread.currentThread().getContextClassLoader();
+
+            GroovyClassLoader classLoader = new GroovyClassLoader(parent);
+
+            String txt = "package com.tcl.demo.boot.common.test.groovy\n" +
+                    "\n" +
+                    "def printLog() {\n" +
+                    "    \n" +
+                    "    println \"start to call helloWithoutParam!\"\n" +
+                    "    return \"success, helloWithoutParam\";\n" +
+                    "}";
+
+            Class<?> clazz = classLoader.parseClass(txt);
+
+            GroovyObject object = (GroovyObject) clazz.newInstance();
+            System.out.println(object.invokeMethod("printLog", null));
+        } catch (Exception e) {
+
+        }
 
     }
 }

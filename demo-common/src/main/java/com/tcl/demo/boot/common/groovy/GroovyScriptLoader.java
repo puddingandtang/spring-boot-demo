@@ -205,6 +205,8 @@ public abstract class GroovyScriptLoader {
         GroovyClassLoader classLoader = new GroovyClassLoader(parent);
 
         // clazz 不同，这里每次都会进行一次脚本编译，最好进行缓存，除非脚本发生变化
+        // 如果scriptTxt是groovy脚本，每次生产的class.getName均不一样groovy.lang.GroovyClassLoader.parseClass(java.lang.String, java.lang.String)
+        // 如果scriptTxt是java的，class.getName是根据java的类名
         Class<?> clazz = classLoader.parseClass(scriptTxt);
 
         classCache.put(scriptNo, clazz);
