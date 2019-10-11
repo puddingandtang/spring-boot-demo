@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7a1a3a5-826c-4342-9e4d-93de53c7b36f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScript01.groovy" afterDir="false" />
+    <list default="true" id="a7a1a3a5-826c-4342-9e4d-93de53c7b36f" name="Default Changelist" comment="groovy">
+      <change afterPath="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/ClassLoadUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/groovy/GroovyScriptLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/groovy/GroovyScriptLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScriptLoaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScriptLoaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/groovy/GroovyScriptLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/groovy/GroovyScriptLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/test-classes/com/tcl/demo/boot/common/test/groovy/GroovyScriptLoaderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/target/test-classes/com/tcl/demo/boot/common/test/groovy/GroovyScriptLoaderTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/demo-common/target/" />
     <ignored path="$PROJECT_DIR$/demo-dal/target/" />
@@ -23,18 +23,40 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="spring-boot-demo" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/groovy/GroovyScriptLoader.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Launcher.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="220" lean-forward="true" selection-start-line="220" selection-end-line="220" />
+            <state relative-caret-position="1823">
+              <caret line="239" column="40" selection-start-line="239" selection-start-column="40" selection-end-line="239" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="408" column="21" lean-forward="true" selection-start-line="408" selection-start-column="21" selection-end-line="408" selection-end-column="21" />
+              <folding>
+                <element signature="e#37807#37808#0" expanded="true" />
+                <element signature="e#37839#37840#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/ClassLoadUnitTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-138">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#clearALlCache#0;class#GroovyScriptLoader#0" />
-                <element signature="method#clearClassCache#0;class#GroovyScriptLoader#0" />
-                <element signature="method#clearHolderCache#0;class#GroovyScriptLoader#0" />
               </folding>
             </state>
           </provider>
@@ -60,6 +82,16 @@
       <find>generatedClass</find>
       <find>clear</find>
       <find>动态生成GroovyObject失败</find>
+      <find>loadCl</find>
+      <find>bootClassPath</find>
+      <find>ClassLoadUnitTest</find>
+      <find>getP</find>
+      <find>getParent</find>
+      <find>getAppClassLoader</find>
+      <find>f</find>
+      <find>defineC</find>
+      <find>defineClass</find>
+      <find>loadClass</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -78,10 +110,11 @@
         <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/groovy/GroovyScriptTool.java" />
         <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScriptUnitTest.java" />
         <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/groovy/GroovyObjectHolder.java" />
-        <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScriptTxt.java" />
-        <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScriptLoaderTest.java" />
         <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/groovy/GroovyScriptLoader.java" />
         <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScript01.groovy" />
+        <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScriptTxt.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/ClassLoadUnitTest.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScriptLoaderTest.java" />
       </list>
     </option>
   </component>
@@ -181,103 +214,17 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
+              <item name="classLoad" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.codehaus.groovy:groovy-all:2.4.7" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.codehaus.groovy:groovy-all:2.4.7" type="70bed36:NamedLibraryElementNode" />
-              <item name="groovy-all-2.4.7.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.codehaus.groovy:groovy-all:2.4.7" type="70bed36:NamedLibraryElementNode" />
-              <item name="groovy-all-2.4.7.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.codehaus.groovy:groovy-all:2.4.7" type="70bed36:NamedLibraryElementNode" />
-              <item name="groovy-all-2.4.7.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="licenses" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.codehaus.groovy:groovy-all:2.4.7" type="70bed36:NamedLibraryElementNode" />
-              <item name="groovy-all-2.4.7.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.codehaus.groovy:groovy-all:2.4.7" type="70bed36:NamedLibraryElementNode" />
-              <item name="groovy-all-2.4.7.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="groovy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.codehaus.groovy:groovy-all:2.4.7" type="70bed36:NamedLibraryElementNode" />
-              <item name="groovy-all-2.4.7.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.codehaus.groovy:groovy-all:2.4.7" type="70bed36:NamedLibraryElementNode" />
-              <item name="groovy-all-2.4.7.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-              <item name="testng" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -314,6 +261,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClassLoadUnitTest.acquireParentClassLoad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tcl.demo.boot.common.test.classLoad.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tcl.demo.boot.common.test.classLoad" />
+      <option name="MAIN_CLASS_NAME" value="com.tcl.demo.boot.common.test.classLoad.ClassLoadUnitTest" />
+      <option name="METHOD_NAME" value="acquireParentClassLoad" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -379,10 +342,12 @@
       <item itemvalue="JUnit.GroovyScriptLoaderTest.invoke" />
       <item itemvalue="Spring Boot.SpringBootDemo" />
       <item itemvalue="JUnit.GroovyScriptLoaderTest.invoke01" />
+      <item itemvalue="JUnit.ClassLoadUnitTest.acquireParentClassLoad" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.GroovyScriptLoaderTest.invoke01" />
+        <item itemvalue="JUnit.ClassLoadUnitTest.acquireParentClassLoad" />
         <item itemvalue="JUnit.GroovyScriptLoaderTest.invoke" />
         <item itemvalue="JUnit.GroovyScriptUnitTest.processJavaScript" />
       </list>
@@ -405,62 +370,69 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570671220534</updated>
-      <workItem from="1570671222385" duration="4614000" />
+      <workItem from="1570671222385" duration="19916000" />
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="groovy">
+      <created>1570696898312</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570696898312</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GroovyScriptLoaderTest_invoke - 2019.10.09 at 14h 51m 53s.xml">
-      <configuration name="GroovyScriptLoaderTest.invoke" configurationId="JUnit" />
+    <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.11 at 09h 56m 03s.xml">
+      <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GroovyScriptLoaderTest_invoke - 2019.10.09 at 14h 55m 46s.xml">
-      <configuration name="GroovyScriptLoaderTest.invoke" configurationId="JUnit" />
+    <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.11 at 09h 58m 14s.xml">
+      <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GroovyScriptLoaderTest_invoke - 2019.10.09 at 14h 56m 06s.xml">
-      <configuration name="GroovyScriptLoaderTest.invoke" configurationId="JUnit" />
+    <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.11 at 10h 47m 23s.xml">
+      <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GroovyScriptLoaderTest_invoke - 2019.10.09 at 14h 56m 25s.xml">
-      <configuration name="GroovyScriptLoaderTest.invoke" configurationId="JUnit" />
+    <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.11 at 10h 57m 48s.xml">
+      <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GroovyScriptLoaderTest_invoke - 2019.10.09 at 14h 56m 51s.xml">
-      <configuration name="GroovyScriptLoaderTest.invoke" configurationId="JUnit" />
+    <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.11 at 11h 00m 23s.xml">
+      <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GroovyScriptLoaderTest_invoke - 2019.10.09 at 15h 04m 39s.xml">
-      <configuration name="GroovyScriptLoaderTest.invoke" configurationId="JUnit" />
+    <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.11 at 11h 11m 19s.xml">
+      <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GroovyScriptLoaderTest_invoke - 2019.10.09 at 15h 06m 39s.xml">
-      <configuration name="GroovyScriptLoaderTest.invoke" configurationId="JUnit" />
+    <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.11 at 11h 12m 16s.xml">
+      <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GroovyScriptLoaderTest_invoke01 - 2019.10.10 at 09h 51m 36s.xml">
-      <configuration name="GroovyScriptLoaderTest.invoke01" configurationId="JUnit" />
+    <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.11 at 11h 12m 39s.xml">
+      <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GroovyScriptLoaderTest_invoke01 - 2019.10.10 at 09h 53m 17s.xml">
-      <configuration name="GroovyScriptLoaderTest.invoke01" configurationId="JUnit" />
+    <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.11 at 11h 14m 11s.xml">
+      <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GroovyScriptLoaderTest_invoke01 - 2019.10.10 at 09h 54m 23s.xml">
+    <history-entry file="GroovyScriptLoaderTest_invoke01 - 2019.10.11 at 11h 31m 00s.xml">
       <configuration name="GroovyScriptLoaderTest.invoke01" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23277000" />
+    <option name="totallyTimeSpent" value="38579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22532189" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Web" order="6" side_tool="true" />
-      <window_info id="Image Layers" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979757" visible="true" weight="0.22532189" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" weight="0.22532189" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Structure" order="7" weight="0.22532189" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32880434" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32880434" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39945653" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -525,64 +497,35 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="groovy初尝试" />
-    <option name="LAST_COMMIT_MESSAGE" value="groovy初尝试" />
+    <MESSAGE value="groovy" />
+    <option name="LAST_COMMIT_MESSAGE" value="groovy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy/2.4.13/groovy-2.4.13-sources.jar!/groovy/lang/GroovyClassLoader.java</url>
-          <line>265</line>
-          <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy/2.4.13/groovy-2.4.13-sources.jar!/groovy/lang/GroovyClassLoader.java</url>
-          <line>274</line>
-          <properties />
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/groovy/GroovyScriptLoader.java</url>
-          <line>48</line>
+          <line>209</line>
           <properties />
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/groovy/GroovyScriptLoader.java</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/groovy/GroovyScriptLoader.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="47" />
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScriptLoaderTest.java</url>
-          <line>62</line>
+          <line>88</line>
           <properties />
-          <option name="timeStamp" value="48" />
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/groovy/lang/GroovyClassLoader.java</url>
-          <line>295</line>
+          <line>297</line>
           <properties />
-          <option name="timeStamp" value="49" />
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/groovy/lang/GroovyClassLoader.java</url>
-          <line>220</line>
+          <line>166</line>
           <properties />
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/groovy/lang/GroovyClassLoader.java</url>
-          <line>276</line>
-          <properties />
-          <option name="timeStamp" value="52" />
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -590,17 +533,17 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>null == loadHolder</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
         <expression-string>collector.generatedClass</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
         <expression-string>codeSource.getName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>null == loadHolder</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -789,26 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScriptTxt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/groovy/GroovyObjectHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/groovy/text/StreamingTemplateEngine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -823,46 +746,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScriptLoaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#invoke#0;class#GroovyScriptLoaderTest#0" />
-            <element signature="method#invoke01#0;class#GroovyScriptLoaderTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScript01.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/org/codehaus/groovy/control/CompilationUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="121" column="11" selection-start-line="121" selection-start-column="11" selection-end-line="121" selection-end-column="11" />
-          <folding>
-            <element signature="e#19039#19040#0" expanded="true" />
-            <element signature="e#19086#19087#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/groovy/lang/GroovyClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="173" column="31" selection-start-line="173" selection-start-column="31" selection-end-line="173" selection-end-column="31" />
-          <folding>
-            <element signature="e#2766#2781#0" expanded="true" />
-            <element signature="e#2966#2981#0" expanded="true" />
-            <element signature="e#15136#15137#0" expanded="true" />
-            <element signature="e#15181#15182#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -877,17 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="130" selection-start-line="3" selection-start-column="130" selection-end-line="3" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="966" column="24" selection-start-line="966" selection-start-column="24" selection-end-line="966" selection-end-column="24" />
-          <folding>
-            <element signature="e#37807#37808#0" expanded="true" />
-            <element signature="e#37839#37840#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -925,22 +801,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/groovy/GroovyObjectHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="168" column="24" selection-start-line="168" selection-start-column="24" selection-end-line="168" selection-end-column="24" />
+        <state relative-caret-position="456">
+          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/security/SecureClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="141" column="19" lean-forward="true" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/org/codehaus/groovy/ast/ClassNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="460" selection-start-line="460" selection-end-line="460" />
+          <folding>
+            <element signature="e#17035#17036#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/org/codehaus/groovy/control/ProcessingUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="160" column="16" selection-start-line="160" selection-start-column="16" selection-end-line="160" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/org/codehaus/groovy/control/CompilationUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="588" column="17" selection-start-line="588" selection-start-column="17" selection-end-line="588" selection-end-column="17" />
+          <folding>
+            <element signature="e#13743#13744#0" expanded="true" />
+            <element signature="e#13774#13775#0" expanded="true" />
+            <element signature="e#19039#19040#0" expanded="true" />
+            <element signature="e#19086#19087#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/groovy/GroovyScriptLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="220" lean-forward="true" selection-start-line="220" selection-end-line="220" />
+        <state relative-caret-position="319">
+          <caret line="209" column="42" selection-start-line="209" selection-start-column="42" selection-end-line="209" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#clearALlCache#0;class#GroovyScriptLoader#0" />
             <element signature="method#clearClassCache#0;class#GroovyScriptLoader#0" />
             <element signature="method#clearHolderCache#0;class#GroovyScriptLoader#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScriptTxt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/groovy/lang/GroovyClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-81">
+          <caret line="273" column="18" selection-start-line="273" selection-start-column="18" selection-end-line="273" selection-end-column="18" />
+          <folding>
+            <element signature="e#2766#2781#0" expanded="true" />
+            <element signature="e#2966#2981#0" expanded="true" />
+            <element signature="e#15136#15137#0" expanded="true" />
+            <element signature="e#15181#15182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScriptLoaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="1436" column="20" lean-forward="true" selection-start-line="1436" selection-start-column="20" selection-end-line="1436" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.8.13/aspectjweaver-1.8.13.jar!/org/aspectj/weaver/bcel/ExtensibleURLClassLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/net/URLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="816" column="25" selection-start-line="816" selection-start-column="25" selection-end-line="816" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/org/codehaus/groovy/runtime/ProxyGeneratorAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1055">
+          <caret line="190" column="29" selection-start-line="190" selection-start-column="29" selection-end-line="190" selection-end-column="29" />
+          <folding>
+            <element signature="e#42620#42621#0" expanded="true" />
+            <element signature="e#42696#42697#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Launcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1823">
+          <caret line="239" column="40" selection-start-line="239" selection-start-column="40" selection-end-line="239" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="408" column="21" lean-forward="true" selection-start-line="408" selection-start-column="21" selection-end-line="408" selection-end-column="21" />
+          <folding>
+            <element signature="e#37807#37808#0" expanded="true" />
+            <element signature="e#37839#37840#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/ClassLoadUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
