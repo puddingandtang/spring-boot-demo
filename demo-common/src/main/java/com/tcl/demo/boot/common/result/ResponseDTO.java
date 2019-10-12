@@ -1,6 +1,5 @@
 package com.tcl.demo.boot.common.result;
 
-import com.sun.tools.javac.util.Assert;
 import com.tcl.demo.boot.common.base.ErrorCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -77,7 +76,6 @@ public class ResponseDTO<T> implements Serializable {
      */
     public ResponseDTO<T> buildFail(int errorCode, String errMsg) {
 
-        Assert.check(errorCode != ErrorCode.SUCCESS_CODE, "错误码设置非法");
         this.code = errorCode;
         this.success = Boolean.FALSE;
         this.errMsg = errMsg;

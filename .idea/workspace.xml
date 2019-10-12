@@ -1,11 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7a1a3a5-826c-4342-9e4d-93de53c7b36f" name="Default Changelist" comment="groovy">
-      <change afterPath="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/ClassLoadUnitTest.java" afterDir="false" />
+    <list default="true" id="a7a1a3a5-826c-4342-9e4d-93de53c7b36f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/CustomClassLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityParticipantContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityRequiredContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityTraceContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/ActivityInjectComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/BaseComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/groovy/GroovyScriptLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/groovy/GroovyScriptLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-bot/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-bot/target/classes/com/tcl/demo/boot/SpringBootDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/exception/BizNormalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/exception/BizNormalException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/exception/BizUnNormalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/exception/BizUnNormalException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/result/ResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/result/ResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/ClassLoadUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/ClassLoadUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/exception/BizNormalException.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/exception/BizNormalException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/exception/BizUnNormalException.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/exception/BizUnNormalException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/result/ResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/result/ResponseDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-common/target/test-classes/com/tcl/demo/boot/common/test/groovy/GroovyScriptLoaderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/target/test-classes/com/tcl/demo/boot/common/test/groovy/GroovyScriptLoaderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/com/tcl/demo/boot/dal/coupon/config/McCouponDataSourceConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/com/tcl/demo/boot/dal/coupon/dataobject/McAccountCouponPackageDataObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/com/tcl/demo/boot/dal/coupon/dataobject/McCouponTemplateDataObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/com/tcl/demo/boot/dal/coupon/mapper/McAccountCouponPackageMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/com/tcl/demo/boot/dal/user/config/McUserDataSourceConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/com/tcl/demo/boot/dal/user/dataobject/McAccountInfoDataObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/com/tcl/demo/boot/dal/user/dataobject/McIdentityAccountConfigDataObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/com/tcl/demo/boot/dal/user/dataobject/McIdentityInfoDataObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/com/tcl/demo/boot/dal/user/mapper/McAccountInfoMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/com/tcl/demo/boot/dal/user/mapper/McIdentityAccountConfigMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/com/tcl/demo/boot/dal/user/mapper/McIdentityInfoMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/com/tcl/demo/boot/dal/user/type/McAccountStatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/com/tcl/demo/boot/dal/user/type/McAccountTypeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/com/tcl/demo/boot/dal/user/type/McIdentityStatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/com/tcl/demo/boot/dal/user/type/McUserTypeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/com/tcl/demo/boot/dal/user/type/McValidConfigEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/dal/mapper/coupon/sqlMapper-mc-accountCouponPackage.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/dal/mapper/user/sqlMapper-mc-accountInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/dal/mapper/user/sqlMapper-mc-identityAccountConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/target/classes/dal/mapper/user/sqlMapper-mc-identityInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/common/command/BaseCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/common/command/BestRecommendCondition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/common/command/BestRecommendContent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/common/processor/BizProcessCondition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/common/processor/BizProcessContent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/common/processor/BizProcessKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/common/processor/BizProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/common/processor/rule/RuleVerifyCondition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/common/processor/rule/RuleVerifyContent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/coupon/CouponBO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/coupon/CouponFilterBO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/coupon/component/CouponCalculationComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/coupon/component/CouponRuleFilterComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/coupon/component/best/BestCouponRecommendCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/coupon/component/rule/CouponCityRuleVerifyProcessor$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/coupon/component/rule/CouponCityRuleVerifyProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/coupon/component/rule/CouponTerminalRuleVerifyProcessor$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/coupon/component/rule/CouponTerminalRuleVerifyProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/coupon/task/entry/CouponTemplateEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/coupon/task/entry/ImportCouponEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/user/McAccountService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/user/McIdentityService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/user/bo/McAccountBO$McAccountBOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/user/bo/McAccountBO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/user/bo/McAccountTransform.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/user/bo/McIdentityAccountConfigBO$McIdentityAccountConfigBOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/user/bo/McIdentityAccountConfigBO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/user/bo/McIdentityAccountConfigTransform.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/user/bo/McIdentityBO$McIdentityBOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/user/bo/McIdentityBO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/user/bo/McIdentityTransform.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/user/component/AccountInitConfigComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/user/impl/McAccountServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/classes/com/tcl/demo/boot/service/user/impl/McIdentityServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/test-classes/com/tcl/demo/boot/service/test/task/ImportCouponDemoTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/target/test-classes/com/tcl/demo/boot/service/test/task/ImportCouponDemoTaskTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-web/target/classes/com/tcl/demo/boot/web/DemoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-web/target/classes/com/tcl/demo/boot/web/dto/AccountResponseDTO$AccountResponseDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-web/target/classes/com/tcl/demo/boot/web/dto/AccountResponseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-web/target/classes/com/tcl/demo/boot/web/dto/BaseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-web/target/classes/com/tcl/demo/boot/web/dto/DemoRequestDTO$DemoRequestDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-web/target/classes/com/tcl/demo/boot/web/dto/DemoRequestDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-web/target/classes/com/tcl/demo/boot/web/dto/IdentityRequestDTO$IdentityRequestDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-web/target/classes/com/tcl/demo/boot/web/dto/IdentityRequestDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-web/target/classes/com/tcl/demo/boot/web/dto/IdentityResponseDTO$IdentityResponseDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-web/target/classes/com/tcl/demo/boot/web/dto/IdentityResponseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-web/target/classes/com/tcl/demo/boot/web/user/McUserController.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/demo-common/target/" />
     <ignored path="$PROJECT_DIR$/demo-dal/target/" />
@@ -27,46 +108,12 @@
     <favorites_list name="spring-boot-demo" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Launcher.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1823">
-              <caret line="239" column="40" selection-start-line="239" selection-start-column="40" selection-end-line="239" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="408" column="21" lean-forward="true" selection-start-line="408" selection-start-column="21" selection-end-line="408" selection-end-column="21" />
-              <folding>
-                <element signature="e#37807#37808#0" expanded="true" />
-                <element signature="e#37839#37840#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/ClassLoadUnitTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-138">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -92,13 +139,15 @@
       <find>defineC</find>
       <find>defineClass</find>
       <find>loadClass</find>
+      <find>classLoader</find>
+      <find>load(</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev_20190905_coupon" />
+        <entry key="$PROJECT_DIR$" value="dev_20191008_groovy" />
       </map>
     </option>
   </component>
@@ -113,10 +162,49 @@
         <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/groovy/GroovyScriptLoader.java" />
         <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScript01.groovy" />
         <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScriptTxt.java" />
-        <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/ClassLoadUnitTest.java" />
         <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScriptLoaderTest.java" />
+        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/ActivityParticipantContext.java" />
+        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/ActivityTraceContext.java" />
+        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/ActivityContext.java" />
+        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/ActivityRequiredContext.java" />
+        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityParticipantContext.java" />
+        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/channel/component/BaseComponent.java" />
+        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/rule/BaseActivityComponent.java" />
+        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/BaseActivityComponent.java" />
+        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityContext.java" />
+        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityRequiredContext.java" />
+        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/BaseComponent.java" />
+        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/ActivityInjectComponent.java" />
+        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/ActivityInjectComponent.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/ClassLoadUnitTest.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/BaseClassLoader.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/AClass.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/exception/BizNormalException.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/exception/BizUnNormalException.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/result/ResponseDTO.java" />
+        <option value="$PROJECT_DIR$/../../testFolder/People.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/CustomClassLoader.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -129,7 +217,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,40 +235,6 @@
               <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
               <item name="demo-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -218,19 +272,46 @@
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: mysql:mysql-connector-java:5.1.37" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: mysql:mysql-connector-java:5.1.37" type="70bed36:NamedLibraryElementNode" />
+              <item name="mysql-connector-java-5.1.37.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: mysql:mysql-connector-java:5.1.37" type="70bed36:NamedLibraryElementNode" />
+              <item name="mysql-connector-java-5.1.37.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: mysql:mysql-connector-java:5.1.37" type="70bed36:NamedLibraryElementNode" />
+              <item name="mysql-connector-java-5.1.37.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: mysql:mysql-connector-java:5.1.37" type="70bed36:NamedLibraryElementNode" />
+              <item name="mysql-connector-java-5.1.37.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,7 +331,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GroovyScriptLoaderTest.invoke01">
+  <component name="RunManager" selected="JUnit.CustomClassLoader.CustomClassLoaderTest">
     <configuration name="GroovyScriptTool" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tcl.demo.boot.common.groovy.GroovyScriptTool" />
       <module name="demo-common" />
@@ -276,6 +357,22 @@
       <option name="PACKAGE_NAME" value="com.tcl.demo.boot.common.test.classLoad" />
       <option name="MAIN_CLASS_NAME" value="com.tcl.demo.boot.common.test.classLoad.ClassLoadUnitTest" />
       <option name="METHOD_NAME" value="acquireParentClassLoad" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomClassLoader.CustomClassLoaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tcl.demo.boot.common.test.classLoad.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tcl.demo.boot.common.test.classLoad" />
+      <option name="MAIN_CLASS_NAME" value="com.tcl.demo.boot.common.test.classLoad.CustomClassLoader" />
+      <option name="METHOD_NAME" value="CustomClassLoaderTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -340,14 +437,16 @@
       <item itemvalue="Application.GroovyScriptTool" />
       <item itemvalue="JUnit.GroovyScriptUnitTest.processJavaScript" />
       <item itemvalue="JUnit.GroovyScriptLoaderTest.invoke" />
-      <item itemvalue="Spring Boot.SpringBootDemo" />
       <item itemvalue="JUnit.GroovyScriptLoaderTest.invoke01" />
       <item itemvalue="JUnit.ClassLoadUnitTest.acquireParentClassLoad" />
+      <item itemvalue="Spring Boot.SpringBootDemo" />
+      <item itemvalue="JUnit.CustomClassLoader.CustomClassLoaderTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GroovyScriptLoaderTest.invoke01" />
+        <item itemvalue="JUnit.CustomClassLoader.CustomClassLoaderTest" />
         <item itemvalue="JUnit.ClassLoadUnitTest.acquireParentClassLoad" />
+        <item itemvalue="JUnit.GroovyScriptLoaderTest.invoke01" />
         <item itemvalue="JUnit.GroovyScriptLoaderTest.invoke" />
         <item itemvalue="JUnit.GroovyScriptUnitTest.processJavaScript" />
       </list>
@@ -370,7 +469,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570671220534</updated>
-      <workItem from="1570671222385" duration="19916000" />
+      <workItem from="1570671222385" duration="26166000" />
+      <workItem from="1570786498964" duration="145000" />
+      <workItem from="1570788262690" duration="8382000" />
     </task>
     <task id="LOCAL-00002" summary="groovy">
       <created>1570696898312</created>
@@ -379,31 +480,17 @@
       <option name="project" value="LOCAL" />
       <updated>1570696898312</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="了解类加载器">
+      <created>1570777579789</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570777579789</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.11 at 09h 56m 03s.xml">
-      <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.11 at 09h 58m 14s.xml">
-      <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.11 at 10h 47m 23s.xml">
-      <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.11 at 10h 57m 48s.xml">
-      <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.11 at 11h 00m 23s.xml">
-      <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.11 at 11h 11m 19s.xml">
-      <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.11 at 11h 12m 16s.xml">
-      <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.11 at 11h 12m 39s.xml">
       <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
     </history-entry>
@@ -413,15 +500,35 @@
     <history-entry file="GroovyScriptLoaderTest_invoke01 - 2019.10.11 at 11h 31m 00s.xml">
       <configuration name="GroovyScriptLoaderTest.invoke01" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ClassLoadUnitTest_acquireParentClassLoad - 2019.10.12 at 14h 27m 06s.xml">
+      <configuration name="ClassLoadUnitTest.acquireParentClassLoad" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomClassLoader_CustomClassLoaderTest - 2019.10.12 at 14h 35m 10s.xml">
+      <configuration name="CustomClassLoader.CustomClassLoaderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomClassLoader_CustomClassLoaderTest - 2019.10.12 at 14h 36m 12s.xml">
+      <configuration name="CustomClassLoader.CustomClassLoaderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomClassLoader_CustomClassLoaderTest - 2019.10.12 at 14h 37m 42s.xml">
+      <configuration name="CustomClassLoader.CustomClassLoaderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomClassLoader_CustomClassLoaderTest - 2019.10.12 at 14h 46m 49s.xml">
+      <configuration name="CustomClassLoader.CustomClassLoaderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomClassLoader_CustomClassLoaderTest - 2019.10.12 at 14h 47m 41s.xml">
+      <configuration name="CustomClassLoader.CustomClassLoaderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomClassLoader_CustomClassLoaderTest - 2019.10.12 at 14h 48m 10s.xml">
+      <configuration name="CustomClassLoader.CustomClassLoaderTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38579000" />
+    <option name="totallyTimeSpent" value="53356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979757" visible="true" weight="0.22532189" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979757" visible="true" weight="0.23104435" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" weight="0.22532189" />
@@ -429,10 +536,9 @@
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Structure" order="7" weight="0.22532189" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32880434" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32880434" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39945653" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -445,10 +551,11 @@
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32880434" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3297568" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -498,7 +605,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="groovy初尝试" />
     <MESSAGE value="groovy" />
-    <option name="LAST_COMMIT_MESSAGE" value="groovy" />
+    <MESSAGE value="了解类加载器" />
+    <option name="LAST_COMMIT_MESSAGE" value="了解类加载器" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -527,6 +635,12 @@
           <properties />
           <option name="timeStamp" value="61" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/CustomClassLoader.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -550,250 +664,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7.jar!/groovy/lang/GroovyClassLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="62" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
-          <folding>
-            <element signature="e#2365#2366#0" expanded="true" />
-            <element signature="e#2433#2434#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/groovy/lang/GroovyObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="63" column="6" lean-forward="true" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/groovy/GroovyObjectHolder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-343">
-          <folding>
-            <element signature="e#0#5244#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-common/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/groovy/util/GroovyScriptEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="329" column="42" lean-forward="true" selection-start-line="329" selection-start-column="42" selection-end-line="329" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/security/AccessController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="297" column="31" selection-start-line="297" selection-start-column="31" selection-end-line="297" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/groovy/lang/GroovyShell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="687" column="28" lean-forward="true" selection-start-line="687" selection-start-column="28" selection-end-line="687" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/base/ErrorCodes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="43" column="52" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/1.8.3/groovy-all-1.8.3.jar!/groovy/lang/GroovyClassLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="163" column="17" selection-start-line="163" selection-start-column="17" selection-end-line="163" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/1.8.3/groovy-all-1.8.3-sources.jar!/groovy/lang/GroovyClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="59" column="45" lean-forward="true" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/1.5.0/groovy-all-1.5.0.jar!/groovy/lang/GroovyClassLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="140" column="17" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/1.5.0/groovy-all-1.5.0-sources.jar!/groovy/lang/GroovyClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="251" column="17" selection-start-line="251" selection-start-column="17" selection-end-line="251" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy/2.4.13/groovy-2.4.13.jar!/groovy/util/GroovyScriptEngine.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy/2.4.13/groovy-2.4.13-sources.jar!/org/codehaus/groovy/tools/gse/StringSetMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-          <folding>
-            <element signature="e#1076#1077#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy/2.4.13/groovy-2.4.13-sources.jar!/groovy/util/GroovyScriptEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
-          <folding>
-            <element signature="e#5129#5916#0" expanded="true" />
-            <element signature="e#5915#5916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy/2.4.13/groovy-2.4.13-sources.jar!/org/codehaus/groovy/control/CompilationUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="123" column="8" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="203" selection-start-line="203" selection-end-line="203" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy/2.4.13/groovy-2.4.13-sources.jar!/groovy/lang/GroovyClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="276" selection-start-line="276" selection-end-line="276" />
-          <folding>
-            <element signature="e#2766#2781#0" expanded="true" />
-            <element signature="e#2966#2981#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="132" column="28" selection-start-line="132" selection-start-column="28" selection-end-line="132" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-dal/src/main/java/com/tcl/demo/boot/dal/user/config/McUserDataSourceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScriptUnitTest.java" />
-    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/exception/BizNormalException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="59" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/cache/AbstractCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/groovy/text/StreamingTemplateEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="606" column="42" lean-forward="true" selection-start-line="606" selection-start-column="42" selection-end-line="606" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/groovy/lang/GroovyCodeSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/groovy/GroovyScript01.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7.jar!/org/codehaus/groovy/runtime/dgm$0.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7.jar!/META-INF/services/org.codehaus.groovy.runtime.ExtensionModule">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="130" selection-start-line="3" selection-start-column="130" selection-end-line="3" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/org/codehaus/groovy/tools/RootLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="152" column="28" selection-start-line="152" selection-start-column="28" selection-end-line="152" selection-end-column="28" />
-          <folding>
-            <element signature="e#2986#3001#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7.jar!/META-INF/licenses/antlr2-license.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/org/codehaus/groovy/testng/TestNgRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7.jar!/META-INF/services/org.codehaus.groovy.plugins.Runners">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7-sources.jar!/org/codehaus/groovy/runtime/ClassExtender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -894,24 +764,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="1436" column="20" lean-forward="true" selection-start-line="1436" selection-start-column="20" selection-end-line="1436" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.8.13/aspectjweaver-1.8.13.jar!/org/aspectj/weaver/bcel/ExtensibleURLClassLoader.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="49" column="31" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/net/URLClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="816" column="25" selection-start-line="816" selection-start-column="25" selection-end-line="816" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -926,17 +782,258 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/user/component/AccountInitConfigComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityParticipantContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/channel/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/channel/component/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityTraceContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/exception/BizRuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/base/ErrorCodes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/BaseActivityComponent.java" />
+    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityRequiredContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/ActivityInjectComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/BaseComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#processComponent#0;class#BaseComponent#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/rt.jar!/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.37/mysql-connector-java-5.1.37-sources.jar!/com/mysql/fabric/jdbc/FabricMySQLDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/sql/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="86" column="7" lean-forward="true" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.37/mysql-connector-java-5.1.37.jar!/META-INF/services/java.sql.Driver">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.37/mysql-connector-java-5.1.37-sources.jar!/com/mysql/jdbc/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="121" column="6" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/sql/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="632" column="35" selection-start-line="632" selection-start-column="35" selection-end-line="632" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/plugin.jar!/sun/plugin2/applet/Applet2ClassLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="114" column="20" selection-start-line="114" selection-start-column="20" selection-end-line="114" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/lib/tools.jar!/sun/rmi/rmic/iiop/ClassPathLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="1439" column="24" lean-forward="true" selection-start-line="1439" selection-start-column="24" selection-end-line="1439" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/ServiceLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="529" column="6" lean-forward="true" selection-start-line="529" selection-start-column="6" selection-end-line="529" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Launcher.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1823">
-          <caret line="239" column="40" selection-start-line="239" selection-start-column="40" selection-end-line="239" selection-end-column="40" />
+        <state relative-caret-position="220">
+          <caret line="210" column="31" selection-start-line="210" selection-start-column="17" selection-end-line="210" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-service/src/test/java/com/tcl/demo/boot/service/test/task/ImportCouponDemoTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/BaseClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/nashorn.jar!/jdk/nashorn/internal/runtime/ScriptLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/net/URLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="356" column="23" selection-start-line="356" selection-start-column="23" selection-end-line="356" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/exception/BizNormalException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/result/ResponseDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/target/test-classes/com/tcl/demo/boot/common/test/classLoad/AClass.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/AClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/exception/BizUnNormalException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="408" column="21" lean-forward="true" selection-start-line="408" selection-start-column="21" selection-end-line="408" selection-end-column="21" />
+        <state relative-caret-position="115">
+          <caret line="756" column="29" selection-start-line="756" selection-start-column="29" selection-end-line="756" selection-end-column="29" />
           <folding>
             <element signature="e#37807#37808#0" expanded="true" />
             <element signature="e#37839#37840#0" expanded="true" />
@@ -944,13 +1041,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/ClassLoadUnitTest.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="139">
+          <caret line="352" column="30" selection-start-line="352" selection-start-column="30" selection-end-line="352" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../testFolder/People.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/CustomClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="61" column="12" lean-forward="true" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/ClassLoadUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>

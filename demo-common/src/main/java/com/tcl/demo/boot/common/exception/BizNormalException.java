@@ -1,7 +1,6 @@
 package com.tcl.demo.boot.common.exception;
 
 import com.google.common.base.Optional;
-import com.sun.tools.javac.util.Assert;
 import com.tcl.demo.boot.common.base.ErrorCode;
 import com.tcl.demo.boot.common.base.ErrorLv;
 
@@ -20,8 +19,6 @@ public class BizNormalException extends BizRuntimeException {
      */
     public BizNormalException(ErrorCode errorCode) {
 
-        Assert.check(null != errorCode);
-
         this.code = errorCode.getCode();
         this.msg = errorCode.getMsg();
         this.lv = ErrorLv.INFO;
@@ -36,7 +33,6 @@ public class BizNormalException extends BizRuntimeException {
      */
     public BizNormalException(ErrorCode errorCode, Object... replace) {
 
-        Assert.check(null != errorCode);
         this.code = errorCode.getCode();
         this.msg = MessageFormat.format(Optional.fromNullable(errorCode.getMsg()).or(""), replace);
         this.lv = ErrorLv.INFO;
@@ -50,7 +46,6 @@ public class BizNormalException extends BizRuntimeException {
      */
     public BizNormalException(ErrorCode errorCode, ErrorLv errorLv) {
 
-        Assert.check(null != errorCode);
         this.code = errorCode.getCode();
         this.msg = errorCode.getMsg();
         this.lv = Optional.fromNullable(errorLv).or(ErrorLv.INFO);
@@ -65,7 +60,6 @@ public class BizNormalException extends BizRuntimeException {
      */
     public BizNormalException(ErrorCode errorCode, ErrorLv errorLv, Object... replace) {
 
-        Assert.check(null != errorCode);
         this.code = errorCode.getCode();
         this.msg = MessageFormat.format(Optional.fromNullable(errorCode.getMsg()).or(""), replace);
         this.lv = Optional.fromNullable(errorLv).or(ErrorLv.INFO);

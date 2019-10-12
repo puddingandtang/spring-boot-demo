@@ -1,7 +1,6 @@
 package com.tcl.demo.boot.common.exception;
 
 import com.google.common.base.Optional;
-import com.sun.tools.javac.util.Assert;
 import com.tcl.demo.boot.common.base.ErrorCode;
 import com.tcl.demo.boot.common.base.ErrorLv;
 
@@ -21,8 +20,6 @@ public class BizUnNormalException extends BizRuntimeException {
      */
     public BizUnNormalException(ErrorCode errorCode) {
 
-        // Assert.check(null != errorCode);
-
         this.code = errorCode.getCode();
         this.msg = errorCode.getMsg();
         this.lv = ErrorLv.ERROR;
@@ -37,8 +34,6 @@ public class BizUnNormalException extends BizRuntimeException {
      */
     public BizUnNormalException(ErrorCode errorCode, Object... replace) {
 
-        // Assert.check(null != errorCode);
-
         this.code = errorCode.getCode();
         this.msg = MessageFormat.format(Optional.fromNullable(errorCode.getMsg()).or(""), replace);
         this.lv = ErrorLv.ERROR;
@@ -51,8 +46,6 @@ public class BizUnNormalException extends BizRuntimeException {
      * @param errorLv   ：如果为null则默认Error级别
      */
     public BizUnNormalException(ErrorCode errorCode, ErrorLv errorLv) {
-
-        // Assert.check(null != errorCode);
 
         this.code = errorCode.getCode();
         this.msg = errorCode.getMsg();
@@ -68,7 +61,6 @@ public class BizUnNormalException extends BizRuntimeException {
      */
     public BizUnNormalException(ErrorCode errorCode, ErrorLv errorLv, Object... replace) {
 
-        // Assert.check(null != errorCode);
         this.code = errorCode.getCode();
         this.msg = MessageFormat.format(Optional.fromNullable(errorCode.getMsg()).or(""), replace);
         this.lv = Optional.fromNullable(errorLv).or(ErrorLv.ERROR);
