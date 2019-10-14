@@ -56,7 +56,11 @@ public class CustomClassLoader extends ClassLoader {
 
             Class clzz = customClassLoader.loadClass("People");
 
+            // CustomClassLoader
             Object o = clzz.newInstance();
+
+            // AppClassLoader
+            // People p = new People();
 
             System.out.println(o.getClass().getClassLoader());
 
