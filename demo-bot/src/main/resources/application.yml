@@ -23,6 +23,12 @@ spring:
         password: 123456
         driver-class-name: com.mysql.jdbc.Driver
         type: com.alibaba.druid.pool.DruidDataSource
+      mc-base:
+        url: jdbc:mysql://localhost:3306/mc_base?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&useSSL=true
+        username: root
+        password: 123456
+        driver-class-name: com.mysql.jdbc.Driver
+        type: com.alibaba.druid.pool.DruidDataSource
 
 
 logging:

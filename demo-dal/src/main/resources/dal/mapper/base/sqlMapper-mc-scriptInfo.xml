@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tcl.demo.boot.dal.base.mapper.McScriptMapper">
+
+    <insert id="addScript" parameterType="com.tcl.demo.boot.dal.base.dataobject.McScriptDataObject">
+        insert into mc_script_info
+        (
+        script_no,
+        script_md5,
+        script_type,
+        script_context,
+        script_status,
+        create_time,
+        update_time
+        )
+        value
+        (
+        #{scriptNo},
+        #{scriptMd5},
+        #{scriptType},
+        #{scriptContext},
+        #{scriptStatus},
+        #{createTime},
+        #{updateTime}
+        )
+    </insert>
+
+    <update id="updateScript">
+
+    </update>
+
+    <select id="queryForScriptNos">
+
+    </select>
+
+    <select id="queryForScriptType">
+
+
+    </select>
+
+</mapper>

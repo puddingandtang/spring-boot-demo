@@ -16,9 +16,20 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class ActivityTraceContext implements Serializable {
 
+    /**
+     * 活动上下文
+     */
     private ActivityContext activity;
 
+    /**
+     * 活动参与上下文
+     */
     private ActivityParticipantContext participant;
+
+    /**
+     * 中断标识
+     */
+    private boolean interrupt = false;
 
 
 }

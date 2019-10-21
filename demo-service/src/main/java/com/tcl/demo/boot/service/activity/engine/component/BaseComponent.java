@@ -4,6 +4,7 @@ import com.tcl.demo.boot.common.base.ErrorCodes;
 import com.tcl.demo.boot.common.base.ErrorLv;
 import com.tcl.demo.boot.common.exception.BizRuntimeException;
 import com.tcl.demo.boot.common.exception.BizUnNormalException;
+import com.tcl.demo.boot.service.activity.context.ActivityResponse;
 import com.tcl.demo.boot.service.activity.context.ActivityTraceContext;
 import lombok.extern.slf4j.Slf4j;
 
@@ -16,11 +17,11 @@ public abstract class BaseComponent {
      * @param traceContext
      * @throws BizRuntimeException
      */
-    public void processComponent(ActivityTraceContext traceContext) throws BizRuntimeException {
+    public void processComponent(ActivityTraceContext traceContext, ActivityResponse response) throws BizRuntimeException {
 
         try {
 
-            this.process(traceContext);
+            this.process(traceContext, response);
 
         } catch (Exception e) {
 
@@ -36,7 +37,7 @@ public abstract class BaseComponent {
                 changeException = new BizUnNormalException(ErrorCodes.CODE_ERROR, ErrorLv.ERROR);
             }
 
-            log.warn("执行类[{}],活动链路上下文[{}],异常内容[{}]", this.getClass().getName(), traceContext, e.getCause());
+            log.warn("执行类[{}],活动链路上下文[{}],异常内容[{}]", this.getClass().getName(), traceContext, e);
 
             throw changeException;
 
@@ -51,5 +52,5 @@ public abstract class BaseComponent {
      *
      * @param traceContext
      */
-    protected abstract void process(ActivityTraceContext traceContext);
+    protected abstract void process(ActivityTraceContext traceContext, ActivityResponse response);
 }

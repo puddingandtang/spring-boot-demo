@@ -35,6 +35,12 @@ public class ErrorCodes {
     // 营销券体系-错误码 2_100_000 ~ 2_199_99
 
     // 营销活动体系-错误码 2_200_000 ~ 2_299_99
+    public static final ErrorCode ACTIVITY_ENGINE_NOT_EXIST = new ErrorCode(2_200_000, "营销活动引擎不存在");
+
+    public static final ErrorCode ACTIVITY_CHANNEL_NOT_EXIST = new ErrorCode(2_200_001, "营销活动流程不存在");
+
+    public static final ErrorCode OPT_NOT_SUPPORT = new ErrorCode(2_200_002, "操作不支持");
+
 
     // 营销卡体系-错误码 2_300_000 ~ 2_399_99
 
@@ -42,4 +48,6 @@ public class ErrorCodes {
     public static final ErrorCode GROOVY_SCRIPT_ILLEGALITY = new ErrorCode(2_400_000, "脚本非法：{0}");
 
     public static final ErrorCode GROOVY_SCRIPT_FAIL = new ErrorCode(2_400_001, "脚本失败：{0}");
+
+
 }

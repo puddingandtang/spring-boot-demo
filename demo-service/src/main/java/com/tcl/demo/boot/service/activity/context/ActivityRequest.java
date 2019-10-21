@@ -1,15 +1,20 @@
 package com.tcl.demo.boot.service.activity.context;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-import java.util.Date;
 
 /**
- * 活动参与人上下文
+ * 活动
  */
 @Data
-public class ActivityParticipantContext implements Serializable {
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class ActivityRequest implements Serializable {
 
     /**
      * 账户编号
@@ -32,11 +37,6 @@ public class ActivityParticipantContext implements Serializable {
     private Long time;
 
     /**
-     * 系统请求时间
-     */
-    private Long requestTime;
-
-    /**
      * 终端
      */
     private Integer terminal;
@@ -51,4 +51,5 @@ public class ActivityParticipantContext implements Serializable {
      * 活动场景
      */
     private Integer scene;
+
 }
