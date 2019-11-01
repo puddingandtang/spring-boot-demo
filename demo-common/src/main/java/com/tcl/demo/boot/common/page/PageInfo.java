@@ -11,9 +11,9 @@ import java.io.Serializable;
  * 页面信息
  */
 @Data
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
+//@Builder
+//@AllArgsConstructor
+//@NoArgsConstructor
 public class PageInfo implements Serializable {
 
 }

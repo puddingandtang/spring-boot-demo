@@ -11,6 +11,7 @@ import com.tcl.demo.boot.service.activity.engine.channel.reward.MockRewardChanne
 import com.tcl.demo.boot.service.activity.engine.channel.rule.MockRuleChannel;
 import com.tcl.demo.boot.service.activity.engine.component.BaseComponent;
 import com.tcl.demo.boot.service.activity.engine.component.input.MockInputComponent;
+import com.tcl.demo.boot.service.activity.engine.component.rule.MockCityRuleComponent;
 import org.junit.Test;
 
 import java.util.LinkedList;
@@ -23,16 +24,24 @@ public class CustomerDefaultActivityEngineTest {
     public void process() {
 
 
+        /** 构建Channel*/
         LinkedList<BaseChannel> outChannels = Lists.newLinkedList();
 
 
+        /** input*/
         LinkedList<BaseComponent> inputs = Lists.newLinkedList();
         inputs.add(new MockInputComponent());
-
         MockInputChannel mockInputChannel = new MockInputChannel(inputs);
-        outChannels.add(mockInputChannel);
 
-        // outChannels.add(new MockRuleChannel());
+        /** rule*/
+        LinkedList<BaseComponent> rules = Lists.newLinkedList();
+        rules.add(new MockCityRuleComponent());
+        MockRuleChannel mockRuleChannel = new MockRuleChannel(rules);
+
+        outChannels.add(mockInputChannel);
+        outChannels.add(mockRuleChannel);
+
+
         // outChannels.add(new MockRewardChannel());
         // outChannels.add(new MockOutputChannel());
 

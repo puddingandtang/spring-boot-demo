@@ -67,6 +67,6 @@ public enum RuleEnum {
      * 是否必须校验
      * 因为有些规则是定制的，一些场景不一定存在
      */
-    private Boolean mustCheck;
+    private boolean mustCheck;
 
 }

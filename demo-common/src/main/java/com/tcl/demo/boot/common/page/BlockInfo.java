@@ -11,8 +11,8 @@ import java.io.Serializable;
  * 页面块
  */
 @Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
+//@Builder
+//@NoArgsConstructor
+//@AllArgsConstructor
 public class BlockInfo implements Serializable {
 }

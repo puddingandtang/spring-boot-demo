@@ -6,7 +6,7 @@ import com.tcl.demo.boot.service.activity.engine.component.BaseComponent;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class MockRuleComponent extends BaseComponent {
+public class MockCityRuleComponent extends BaseComponent {
 
     @Override
     protected void process(ActivityTraceContext traceContext, ActivityResponse response) {

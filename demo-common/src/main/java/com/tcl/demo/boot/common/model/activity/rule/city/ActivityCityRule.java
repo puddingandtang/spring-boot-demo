@@ -7,8 +7,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
-import java.util.List;
-
+import java.util.HashSet;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
@@ -23,7 +22,7 @@ public class ActivityCityRule extends BaseRule implements Serializable {
     /**
      * 城市编号
      */
-    private List<String> cityCodes;
+    private HashSet<String> cityCodes;
 
     public ActivityCityRule() {
         super(RuleEnum.ACTIVITY_CITY_RULE.getRuleCode(), "1.0", true);

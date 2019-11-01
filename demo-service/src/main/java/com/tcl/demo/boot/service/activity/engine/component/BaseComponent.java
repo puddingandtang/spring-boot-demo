@@ -6,6 +6,7 @@ import com.tcl.demo.boot.common.exception.BizRuntimeException;
 import com.tcl.demo.boot.common.exception.BizUnNormalException;
 import com.tcl.demo.boot.service.activity.context.ActivityResponse;
 import com.tcl.demo.boot.service.activity.context.ActivityTraceContext;
+import com.tcl.demo.boot.service.activity.type.ActivityResultCodeEnum;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -53,4 +54,15 @@ public abstract class BaseComponent {
      * @param traceContext
      */
     protected abstract void process(ActivityTraceContext traceContext, ActivityResponse response);
+
+    /**
+     * 校验失败
+     *
+     * @param traceContext
+     */
+    public void verifyFail(ActivityTraceContext traceContext, ActivityResponse response, ActivityResultCodeEnum codeEnum) {
+
+        traceContext.setInterrupt(true);
+        response.setResultCode(codeEnum.getCode());
+    }
 }
