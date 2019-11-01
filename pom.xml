@@ -32,6 +32,7 @@
         <druid.boot.version>1.1.17</druid.boot.version>
         <mybatis.boot.version>1.2.0</mybatis.boot.version>
         <mysql.version>5.1.37</mysql.version>
+        <joda-time.version>2.9.3</joda-time.version>
     </properties>
 
     <dependencyManagement>
@@ -133,6 +134,12 @@
                 <version>2.4.7</version>
             </dependency>
             <!-- groovy end-->
+
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda-time.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>

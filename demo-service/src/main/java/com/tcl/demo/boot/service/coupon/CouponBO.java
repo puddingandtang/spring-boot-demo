@@ -1,6 +1,6 @@
 package com.tcl.demo.boot.service.coupon;
 
-import com.tcl.demo.boot.common.model.rule.BaseRule;
+import com.tcl.demo.boot.common.model.BaseRule;
 import lombok.Data;
 
 import java.io.Serializable;

@@ -2,8 +2,8 @@ package com.tcl.demo.boot.common.test.rule;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;
-import com.tcl.demo.boot.common.model.rule.coupon.CouponCityRule;
-import com.tcl.demo.boot.common.model.rule.coupon.type.CouponLimitTypeEnum;
+import com.tcl.demo.boot.common.model.coupon.rule.CouponCityRule;
+import com.tcl.demo.boot.common.model.coupon.type.CouponLimitTypeEnum;
 import org.junit.Ignore;
 import org.junit.Test;
 

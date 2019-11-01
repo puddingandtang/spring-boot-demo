@@ -3,12 +3,12 @@ package com.tcl.demo.boot.common.test.rule;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.google.common.collect.Lists;
-import com.tcl.demo.boot.common.model.rule.activity.reward.RewardContent;
-import com.tcl.demo.boot.common.model.rule.activity.reward.RewardMatchNode;
-import com.tcl.demo.boot.common.model.rule.activity.reward.RewardMatchNodeLadder;
-import com.tcl.demo.boot.common.model.rule.activity.reward.RewardMatchingRule;
-import com.tcl.demo.boot.common.model.rule.base.NotifyConfig;
-import com.tcl.demo.boot.common.model.rule.base.PushElement;
+import com.tcl.demo.boot.common.model.activity.rule.reward.RewardContent;
+import com.tcl.demo.boot.common.model.activity.rule.reward.RewardMatchNode;
+import com.tcl.demo.boot.common.model.activity.rule.reward.RewardMatchNodeLadder;
+import com.tcl.demo.boot.common.model.activity.rule.reward.RewardMatchingRule;
+import com.tcl.demo.boot.common.model.base.NotifyConfig;
+import com.tcl.demo.boot.common.model.base.PushElement;
 import org.junit.Ignore;
 import org.junit.Test;
 

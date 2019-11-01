@@ -1,6 +1,6 @@
 package com.tcl.demo.boot.service.activity.context;
 
-import com.tcl.demo.boot.common.model.rule.BaseRule;
+import com.tcl.demo.boot.common.model.BaseRule;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

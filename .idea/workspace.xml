@@ -1,45 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/../../../caocao/code/ump-rule/src/main/java/com/caocao/bss/ump/rule/types/BizLineEnum.java" line="21" />
+    <bookmark url="file://$PROJECT_DIR$/../../../caocao/code/ump-rule/src/main/java/com/caocao/bss/ump/rule/types/BizLineEnum.java" line="23" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7a1a3a5-826c-4342-9e4d-93de53c7b36f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-dal/src/main/java/com/tcl/demo/boot/dal/base/config/McBaseDataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-dal/src/main/java/com/tcl/demo/boot/dal/base/dataobject/McFlowDataObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-dal/src/main/java/com/tcl/demo/boot/dal/base/dataobject/McScriptDataObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-dal/src/main/java/com/tcl/demo/boot/dal/base/mapper/McScriptMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-dal/src/main/resources/dal/mapper/base/sqlMapper-mc-scriptInfo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/AbstractEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/CustomerDefaultActivityEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/channel/BaseChannel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/channel/input/MockInputChannel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/channel/output/MockOutputChannel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/channel/reward/MockRewardChannel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/channel/rule/MockRuleChannel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/ActivityInfoInjectComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/input/MockInputComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/output/MockOutPutComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/reward/MockRewardComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/rule/MockRuleComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/type/ActivityResultCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/base/script/ScriptService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/base/script/bo/FlowBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/base/script/bo/FlowScriptContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/base/script/bo/ScriptBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/base/script/impl/ScriptServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/common/excel/CommonDataAnalysisListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/common/excel/ExcelData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/src/test/java/com/tcl/demo/boot/service/test/engine/CustomerDefaultActivityEngineTest.java" afterDir="false" />
+    <list default="true" id="a7a1a3a5-826c-4342-9e4d-93de53c7b36f" name="Default Changelist" comment="活动流程设计。">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/ActivityBaseInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/city/ActivityCityRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/city/ActivityCityRuleValidity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/time/ActivityTimeRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/time/ActivityTimeRuleValidity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/time/TimeFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/type/ActivityLimitEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/type/ActivityUnitEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/page/BlockInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/page/ItemInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/page/PageInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-web/src/main/java/com/tcl/demo/boot/web/activity/ActivityUnitController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-bot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-bot/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/base/ErrorCodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/base/ErrorCodes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/base/ErrorCodes.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/base/ErrorCodes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-assembly/demo-assembly.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-assembly/demo-assembly.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-bot/demo-bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-bot/demo-bot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/demo-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/demo-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/rule/BaseRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/BaseRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/rule/RuleEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/RuleEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/rule/activity/reward/RewardContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/reward/RewardContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/rule/activity/reward/RewardMatchNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/reward/RewardMatchNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/rule/activity/reward/RewardMatchNodeLadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/reward/RewardMatchNodeLadder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/rule/activity/reward/RewardMatchingRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/reward/RewardMatchingRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/rule/base/NotifyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/base/NotifyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/rule/base/PushElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/base/PushElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/rule/coupon/CouponCityRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/coupon/rule/CouponCityRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/rule/coupon/CouponTerminalRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/coupon/rule/CouponTerminalRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/rule/coupon/type/CouponLimitTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/coupon/type/CouponLimitTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/rule/coupon/type/CouponTerminalEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/coupon/type/CouponTerminalEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/rule/CouponCityRuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/rule/CouponCityRuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/rule/RewardMatchingRuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/rule/RewardMatchingRuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/model/rule/BaseRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/model/rule/RuleEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/model/rule/activity/reward/RewardContent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/model/rule/activity/reward/RewardMatchNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/model/rule/activity/reward/RewardMatchNodeLadder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/model/rule/activity/reward/RewardMatchingRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/model/rule/base/NotifyConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/model/rule/base/PushElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/model/rule/coupon/CouponCityRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/model/rule/coupon/CouponTerminalRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/model/rule/coupon/type/CouponLimitTypeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/classes/com/tcl/demo/boot/common/model/rule/coupon/type/CouponTerminalEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/test-classes/com/tcl/demo/boot/common/test/rule/CouponCityRuleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/target/test-classes/com/tcl/demo/boot/common/test/rule/CouponCityRuleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-common/target/test-classes/com/tcl/demo/boot/common/test/rule/RewardMatchingRuleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/target/test-classes/com/tcl/demo/boot/common/test/rule/RewardMatchingRuleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-dal/demo-dal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-dal/demo-dal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/demo-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/demo-service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityParticipantContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityParticipantContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityRequiredContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityTraceContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityTraceContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/ActivityInjectComponent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/BaseComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/BaseComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-service/src/test/java/com/tcl/demo/boot/service/test/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/coupon/CouponBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/coupon/CouponBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/coupon/component/rule/CouponCityRuleVerifyProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/coupon/component/rule/CouponCityRuleVerifyProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/coupon/component/rule/CouponTerminalRuleVerifyProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/coupon/component/rule/CouponTerminalRuleVerifyProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-web/demo-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-web/demo-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/demo-common/target/" />
     <ignored path="$PROJECT_DIR$/demo-dal/target/" />
@@ -61,12 +82,12 @@
     <favorites_list name="spring-boot-demo" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo-service/src/test/java/com/tcl/demo/boot/service/test/engine/CustomerDefaultActivityEngineTest.java">
+        <entry file="file://$PROJECT_DIR$/demo-web/src/main/java/com/tcl/demo/boot/web/activity/ActivityUnitController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+            <state relative-caret-position="420">
+              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,6 +103,7 @@
         <option value="Interface" />
         <option value="package-info" />
         <option value="Enum" />
+        <option value="CustomEnum" />
         <option value="Class" />
       </list>
     </option>
@@ -129,30 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/ActivityInjectComponent.java" />
-        <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/ClassLoadUnitTest.java" />
-        <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/BaseClassLoader.java" />
-        <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/AClass.java" />
-        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/exception/BizNormalException.java" />
-        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/exception/BizUnNormalException.java" />
-        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/result/ResponseDTO.java" />
-        <option value="$PROJECT_DIR$/../../testFolder/People.java" />
-        <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/People.java" />
-        <option value="$PROJECT_DIR$/demo-common/src/test/java/com/tcl/demo/boot/common/test/classLoad/CustomClassLoader.java" />
-        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/common/excel/CommonData.java" />
-        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/common/excel/ExcelData.java" />
-        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/common/excel/CommonDataAnalysisListener.java" />
-        <option value="$PROJECT_DIR$/demo-bot/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/demo-dal/src/main/java/com/tcl/demo/boot/dal/base/config/McBaseDataSourceConfig.java" />
-        <option value="$PROJECT_DIR$/demo-dal/src/main/java/com/tcl/demo/boot/dal/base/dataobject/McScript.java" />
-        <option value="$PROJECT_DIR$/demo-dal/src/main/java/com/tcl/demo/boot/dal/base/mapper/McScriptMapper.java" />
-        <option value="$PROJECT_DIR$/demo-dal/src/main/resources/dal/mapper/base/sqlMapper-mc-scriptInfo.xml" />
-        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/base/script/bo/ScriptBO.java" />
-        <option value="$PROJECT_DIR$/demo-dal/src/main/java/com/tcl/demo/boot/dal/base/dataobject/McFlowDataObject.java" />
-        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/base/script/bo/FlowBO.java" />
-        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/base/script/bo/FlowScriptBO.java" />
-        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/base/script/bo/FlowScriptContainer.java" />
-        <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/base/script/ScriptService.java" />
         <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/base/script/impl/ScriptServiceImpl.java" />
         <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/coupon/component/best/BestCouponRecommendCommand.java" />
         <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityContext.java" />
@@ -180,6 +178,30 @@
         <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/BaseComponent.java" />
         <option value="$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/input/MockInputComponent.java" />
         <option value="$PROJECT_DIR$/demo-service/src/test/java/com/tcl/demo/boot/service/test/engine/CustomerDefaultActivityEngineTest.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/rule/coupon/CouponCityRule.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/coupon/rule/CouponTerminalRule.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/ActivityBaseInfo.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/ActivityTimeRule.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-common/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/time/TimeFrame.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/time/ActivityTimeRule.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/page/DynamicPageInfo.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/page/CardSlot.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/page/BlockSlot.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/page/PageInfo.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/page/BlockInfo.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/page/Item.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/RuleEnum.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/type/ActivityRangeEnum.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/type/ActivityLimitEnum.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/city/ActivityCityRule.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/ActivityRuleValiadity.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/city/ActivityCityValidity.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/time/ActivityTimeValidity.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/time/ActivityTimeRuleValidity.java" />
+        <option value="$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/type/ActivityUnitEnum.java" />
+        <option value="$PROJECT_DIR$/demo-web/src/main/java/com/tcl/demo/boot/web/activity/ActivityUnitController.java" />
       </list>
     </option>
   </component>
@@ -213,8 +235,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,117 +247,140 @@
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-service" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-service" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-service" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-service" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-service" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="activity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-service" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="activity" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="rule" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-service" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="activity" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-              <item name="channel" type="462c0819:PsiDirectoryNode" />
+              <item name="rule" type="462c0819:PsiDirectoryNode" />
+              <item name="city" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-service" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="activity" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-              <item name="channel" type="462c0819:PsiDirectoryNode" />
-              <item name="input" type="462c0819:PsiDirectoryNode" />
+              <item name="type" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-service" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-service" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-service" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="activity" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -348,8 +393,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/demo-dal/src/main/resources/dal/mapper/base" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.tcl.demo.boot.common" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-dal/src/main/resources/dal/mapper/base" />
     </key>
@@ -366,21 +417,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerDefaultActivityEngineTest.process">
-    <configuration name="GroovyScriptTool" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tcl.demo.boot.common.groovy.GroovyScriptTool" />
-      <module name="demo-common" />
-      <option name="VM_PARAMETERS" value="-XX:MaxPermSize=1KB" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tcl.demo.boot.common.groovy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.SpringBootDemo">
     <configuration name="ClassLoadUnitTest.acquireParentClassLoad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-common" />
       <extension name="coverage">
@@ -429,22 +466,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroovyScriptLoaderTest.invoke" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-common" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tcl.demo.boot.common.test.groovy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tcl.demo.boot.common.test.groovy" />
-      <option name="MAIN_CLASS_NAME" value="com.tcl.demo.boot.common.test.groovy.GroovyScriptLoaderTest" />
-      <option name="METHOD_NAME" value="invoke" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GroovyScriptLoaderTest.invoke01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-common" />
       <extension name="coverage">
@@ -469,13 +490,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.GroovyScriptTool" />
-      <item itemvalue="JUnit.GroovyScriptLoaderTest.invoke" />
       <item itemvalue="JUnit.GroovyScriptLoaderTest.invoke01" />
       <item itemvalue="JUnit.ClassLoadUnitTest.acquireParentClassLoad" />
       <item itemvalue="JUnit.CustomClassLoader.CustomClassLoaderTest" />
-      <item itemvalue="Spring Boot.SpringBootDemo" />
       <item itemvalue="JUnit.CustomerDefaultActivityEngineTest.process" />
+      <item itemvalue="Spring Boot.SpringBootDemo" />
     </list>
     <recent_temporary>
       <list>
@@ -483,7 +502,6 @@
         <item itemvalue="JUnit.CustomClassLoader.CustomClassLoaderTest" />
         <item itemvalue="JUnit.ClassLoadUnitTest.acquireParentClassLoad" />
         <item itemvalue="JUnit.GroovyScriptLoaderTest.invoke01" />
-        <item itemvalue="JUnit.GroovyScriptLoaderTest.invoke" />
       </list>
     </recent_temporary>
   </component>
@@ -511,7 +529,12 @@
       <workItem from="1571291379633" duration="11489000" />
       <workItem from="1571391145183" duration="12000" />
       <workItem from="1571552085676" duration="76000" />
-      <workItem from="1571628475861" duration="14267000" />
+      <workItem from="1571628475861" duration="14502000" />
+      <workItem from="1571650628326" duration="1437000" />
+      <workItem from="1571652077641" duration="1835000" />
+      <workItem from="1571721799695" duration="6576000" />
+      <workItem from="1572510111067" duration="2983000" />
+      <workItem from="1572584795773" duration="672000" />
     </task>
     <task id="LOCAL-00002" summary="groovy">
       <created>1570696898312</created>
@@ -541,13 +564,17 @@
       <option name="project" value="LOCAL" />
       <updated>1571040153722</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="活动流程设计。">
+      <created>1571648930285</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571648930285</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomerDefaultActivityEngineTest_process - 2019.10.21 at 16h 54m 09s.xml">
-      <configuration name="CustomerDefaultActivityEngineTest.process" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CustomerDefaultActivityEngineTest_process - 2019.10.21 at 16h 56m 20s.xml">
       <configuration name="CustomerDefaultActivityEngineTest.process" configurationId="JUnit" />
     </history-entry>
@@ -575,15 +602,18 @@
     <history-entry file="CustomerDefaultActivityEngineTest_process - 2019.10.21 at 17h 07m 18s.xml">
       <configuration name="CustomerDefaultActivityEngineTest.process" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CustomerDefaultActivityEngineTest_process - 2019.10.21 at 17h 08m 14s.xml">
+      <configuration name="CustomerDefaultActivityEngineTest.process" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91752000" />
+    <option name="totallyTimeSpent" value="105490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979757" visible="true" weight="0.2739628" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979757" visible="true" weight="0.2846924" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" weight="0.22532189" />
@@ -593,7 +623,7 @@
       <window_info id="Structure" order="7" weight="0.22532189" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32880434" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32880434" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39945653" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -662,7 +692,8 @@
     <MESSAGE value="groovy" />
     <MESSAGE value="了解类加载器" />
     <MESSAGE value="类加载器" />
-    <option name="LAST_COMMIT_MESSAGE" value="类加载器" />
+    <MESSAGE value="活动流程设计。" />
+    <option name="LAST_COMMIT_MESSAGE" value="活动流程设计。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -762,255 +793,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo-dal/src/main/java/com/tcl/demo/boot/dal/base/dataobject/McFlowDataObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="38" selection-start-line="38" selection-end-line="46" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/base/script/bo/FlowScriptBO.java" />
-    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/groovy/GroovyObjectHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/groovy/GroovyScriptLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#acquireGroovyObjectForScriptNo#0;class#GroovyScriptLoader#0" />
-            <element signature="method#clearALlCache#0;class#GroovyScriptLoader#0" />
-            <element signature="method#clearClassCache#0;class#GroovyScriptLoader#0" />
-            <element signature="method#clearHolderCache#0;class#GroovyScriptLoader#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/base/script/bo/FlowBO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/base/script/ScriptService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/base/script/impl/ScriptServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/base/script/bo/FlowScriptContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/common/command/BaseCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/common/processor/BizProcessCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/common/command/BestRecommendCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/common/processor/BizProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/coupon/component/best/BestCouponRecommendCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="51" column="53" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/coupon/component/CouponCalculationComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/coupon/component/CouponRuleFilterComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/coupon/task/entry/CouponTemplateEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/coupon/task/entry/ImportCouponEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.0.0-beta6/easyexcel-2.0.0-beta6-sources.jar!/com/alibaba/excel/EasyExcelFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="35" column="2" lean-forward="true" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.0.0-beta6/easyexcel-2.0.0-beta6-sources.jar!/com/alibaba/excel/EasyExcel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-dal/src/main/java/com/tcl/demo/boot/dal/base/dataobject/McScriptDataObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="33" selection-start-line="33" selection-end-line="47" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/rule/BaseRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/rule/coupon/CouponCityRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/component/inject/ActivityParticipantInjectComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/coupon/component/rule/CouponCityRuleVerifyProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/cache/AbstractCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="83" column="33" lean-forward="true" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/engine/channel/package-info.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/type.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/type/ActivityResultCodeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="49" selection-start-line="49" selection-end-line="52" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo-service/src/main/java/com/tcl/demo/boot/service/activity/context/ActivityParticipantContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="569">
           <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/base/ErrorCodes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1181,5 +967,316 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/reward/RewardContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/reward/RewardMatchNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/reward/RewardMatchNodeLadder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/coupon/rule/CouponCityRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/coupon/rule/CouponTerminalRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/base/NotifyConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/base/PushElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/coupon/type/CouponTerminalEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/reward/RewardMatchingRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="43" column="79" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="137" selection-start-line="137" selection-end-line="141" selection-end-column="25" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="59" column="46" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/page/BlockInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/page/ItemInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/page/PageInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/RuleEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/coupon/type/CouponLimitTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" selection-start-line="9" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/BaseRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/type/ActivityLimitEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/time/TimeFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/ActivityRuleValiadity.java" />
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/time/ActivityTimeRuleValidity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/city/ActivityCityRuleValidity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#validityCityRule#0;class#ActivityCityValidity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-web/src/main/java/com/tcl/demo/boot/web/DemoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" selection-start-line="20" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-web/src/main/java/com/tcl/demo/boot/web/dto/IdentityRequestDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/time/ActivityTimeRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/ActivityBaseInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/type/ActivityUnitEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-281">
+          <caret line="12" column="105" selection-start-line="12" selection-start-column="105" selection-end-line="12" selection-end-column="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/base/ErrorCodes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-166">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-common/src/main/java/com/tcl/demo/boot/common/model/activity/rule/city/ActivityCityRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-web/src/main/java/com/tcl/demo/boot/web/activity/ActivityUnitController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>demo-assembly</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
