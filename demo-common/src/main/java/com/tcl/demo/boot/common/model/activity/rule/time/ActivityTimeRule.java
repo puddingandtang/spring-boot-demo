@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.List;
 
 @Data
@@ -30,12 +31,12 @@ public class ActivityTimeRule extends BaseRule implements Serializable {
     /**
      * 一周：星期一 ～ 星期天
      */
-    private List<Integer> weeks;
+    private HashSet<Integer> weeks;
 
     /**
      * 一个月份：1号 ～ 31 号
      */
-    private List<Integer> days;
+    private HashSet<Integer> days;
 
     public ActivityTimeRule() {
         super(RuleEnum.ACTIVITY_TIME_RULE.getRuleCode(), "1.0", true);
