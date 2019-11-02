@@ -1,6 +1,7 @@
 package com.tcl.demo.boot.common.model;
 
 import com.tcl.demo.boot.common.model.activity.rule.city.ActivityCityRule;
+import com.tcl.demo.boot.common.model.activity.rule.limit.ActivityLimitFrequencyRule;
 import com.tcl.demo.boot.common.model.activity.rule.time.ActivityTimeRule;
 import com.tcl.demo.boot.common.model.activity.rule.reward.RewardMatchingRule;
 import com.tcl.demo.boot.common.model.coupon.rule.CouponCityRule;
@@ -20,7 +21,9 @@ public enum RuleEnum {
 
     ACTIVITY_TIME_RULE(2, "ACTIVITY_TIME_RULE", "活动时间规则", null, ActivityTimeRule.class, true),
 
-    ACTIVITY_CITY_RULE(2, "ACTIVITY_CITY_RULE", "活动城市规则", null, ActivityCityRule.class, true);
+    ACTIVITY_CITY_RULE(2, "ACTIVITY_CITY_RULE", "活动城市规则", null, ActivityCityRule.class, true),
+
+    ACTIVITY_LIMIT_FREQUENCY_RULE(2, "ACTIVITY_LIMIT_FREQUENCY_RULE", "活动次数规则", null, ActivityLimitFrequencyRule.class, true);
 
     RuleEnum(Integer bizType,
              String ruleCode,
