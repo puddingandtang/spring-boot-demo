@@ -13,7 +13,6 @@ public class ResponseDTOTest {
     @Ignore
     public void build_success_case() {
 
-
         ResponseDTO<Integer> responseDTO = new ResponseDTO<Integer>().buildSuccess(1);
 
         Assert.assertNotNull(responseDTO);

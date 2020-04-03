@@ -1,15 +1,21 @@
 package com.tcl.demo.boot.service.activity.engine;
 
 import com.google.common.collect.Lists;
+import com.tcl.demo.boot.service.activity.component.ActivityInfoComponent;
 import com.tcl.demo.boot.service.activity.context.*;
 import com.tcl.demo.boot.service.activity.engine.channel.BaseChannel;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
 import java.util.LinkedList;
 import java.util.List;
 
 @Slf4j
+@Component
 public class CustomerDefaultActivityEngine extends AbstractEngine {
+
 
     @Override
     protected ActivityParticipantContext assemblyBizActivityParticipantContext(ActivityRequest request) {

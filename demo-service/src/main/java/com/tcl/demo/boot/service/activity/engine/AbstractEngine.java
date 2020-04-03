@@ -127,8 +127,7 @@ public abstract class AbstractEngine {
      * @param participantContext
      * @return
      */
-    protected List<ActivityResponse> processActivities(List<ActivityContext> activityContexts,
-                                                       ActivityParticipantContext participantContext) {
+    protected List<ActivityResponse> processActivities(List<ActivityContext> activityContexts, ActivityParticipantContext participantContext) {
 
         if (CollectionTool.isEmpty(activityContexts) || null == participantContext) {
 

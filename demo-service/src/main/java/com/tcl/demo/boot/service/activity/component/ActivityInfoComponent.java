@@ -20,7 +20,6 @@ public class ActivityInfoComponent {
      */
     public List<ActivityContext> acquire(ActivityParticipantContext participantContext) {
 
-
         return Lists.newArrayList();
     }
 }

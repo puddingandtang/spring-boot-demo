@@ -1,0 +1,7 @@
+
+
+
+UPDATE marketing_center.mc_caocao_coupon_rule
+SET rule_content = '{"ruleCode":"COUPON_ORDER_USE_LIMIT","ruleKind":1,"version":"1.0","bizOrderTypes":[{"bizType":"1","bizOrderTypes":["2"]}]}'
+WHERE id = 47050;
+
